@@ -14,7 +14,8 @@ module.exports = {
         'darker': '#2c2e32',
         'lighter': '#ffffff1a',
         'light-white': '#ccc',
-        'slant-color': '#00adef'
+        'slant-color': '#00adef',
+        'hot-color': '#f3502a' 
       }
     },
     container:{

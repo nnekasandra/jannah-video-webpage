@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-light py-10 py-15">
+<body class="bg-light py-10 py-15 bg-cover bg-center" style="background-image: url('/public/images/bg-dots.png');">
     <header id="top">
         <div class="p-5 flex justify-between px-7 py-3">
             <img src="images/videeo.png" alt="title">
@@ -167,23 +167,23 @@
                 </div>
             </div>
         </section>
-        <section class="electronics bg-light">
+        <section class="electronics bg-darker">
             <div>
                 <h2 class="sub-heading sub-heading text-white text-2xl ml-10">Electronics <span class="text-slant-color">/</span></h2>
             </div>
-            <div class="electronic grid grid-cols-2 bg-darker border m-10">
-                <div class="entire-electronics-section p-10 grid grid-cols-2">
+            <div class="electronic grid grid-cols-3">
+                <div class="entire-electronics-section p-5 grid col-span-2 grid-cols-2 gap-5 border m-10 bg-light border border-b-2 row-span-2">
                     <div class="relative">
                         <div><img src="images/gadget2.jpg" alt="computer gadget" class="w-max"></div>
                         <p class="bg-text-colors text-sm border-0 w-20 text-white p-1 text-center rounded">Electronics</p>
                         <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
                             <div class="flex">
-                                <p class="mr-5"><i class="fa fa-user-circle"></i>Tony stark</p>
-                                <p><i class="fa fa-clock-o"></i>Feb 6, 2017</p>
+                                <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp; Tony stark</p>
+                                <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
                             </div>
                             <div class="flex">
-                                <p class="mr-5"><i class="fa fa-comments"></i>0</p>
-                                <p><i class="fa fa-fire"></i>3088</p>
+                                <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                                <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;3088</p>
                             </div>
                         </div>
                         <h3 class="text-white text-2xl">Top 5 Computer Gadget you must have</h3>
@@ -195,12 +195,12 @@
                         <p class="bg-text-colors text-sm border-0 w-20 text-white p-1 text-center rounded">Electronics</p>
                         <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
                             <div class="flex">
-                                <p class="mr-5"><i class="fa fa-user-circle"></i>Danny Rand</p>
-                                <p><i class="fa fa-clock-o"></i>Feb 6,2017</p>
+                                <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Danny Rand</p>
+                                <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6,2017</p>
                             </div>
                             <div class="flex mr-5">
-                                <p class="mr-5"><i class="fa fa-comments"></i>0</p>
-                                <p><i class="fa fa-fire"></i>2,019</p>
+                                <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                                <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;2,019</p>
                             </div>
                         </div>
                         <h3 class="text-white text-2xl">10 Things amazon echo can do that apple's siri can't</h3>
@@ -212,12 +212,12 @@
                         <p class="bg-text-colors text-sm border-0 w-20 text-white p-1 text-center rounded">Electronics</p>
                         <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
                             <div class="flex">
-                                <p class="mr-5"><i class="fa fa-user-circle"></i>Tony stark</p>
-                                <p><i class="fa fa-clock-o"></i>Jan 6, 2017</p>
+                                <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Tony stark</p>
+                                <p><i class="fa fa-clock-o"></i>&nbsp;Jan 6, 2017</p>
                             </div>
                             <div class="flex mr-5">
-                                <p class="mr-5"><i class="fa fa-comments"></i>0</p>
-                                <p><i class="fa fa-fire"></i>1,022</p>
+                                <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                                <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;1,022</p>
                             </div>
                         </div>
                         <h3 class="text-white text-2xl">Google home vs amazon echo - Which is the best?</h3>
@@ -229,108 +229,153 @@
                         <p class="bg-text-colors text-sm border-0 w-20 text-white p-1 text-center rounded">Electronics</p>
                         <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
                             <div class="flex">
-                                <p class="mr-5"><i class="fa fa-user-circle"></i>Tony stark</p>
-                                <p><i class="fa fa-clock-o"></i>Nov 6, 2015</p>
+                                <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Tony stark</p>
+                                <p><i class="fa fa-clock-o"></i>&nbsp;Nov 6, 2015</p>
                             </div>
                             <div class="flex">
                                 <p class="mr-5"><i class="fa fa-comments"></i>0</p>
-                                <p><i class="fa fa-fire"></i>2,019</p>
+                                <p class="text-hot-color"><i class="fa fa-fire"></i> &nbsp;2,019</p>
                             </div>
                         </div>
                         <h3 class="text-white text-2xl">Apple September Event - 2017</h3>
                         <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we build the best wordpress themes and Magazine themes......</p>
                         <button class="bg-text-colors text-xs border-0 w-28 text-white p-4 text-center rounded">Read More>></button>
                     </div>
-                    <!-- <hr/>
-                    <button>Show More</button> -->
+                        <button class="font-bold p-0 text-white text-xl text-center col-span-2 border-t-2">Show More</button>
                 </div>
-                <div class="">
+                <div class="border bg-light m-10 ml-0 text-sm font-bold p-2">
                     <div>
                         <i class="fa fa-text-0"></i>
-                        <h2 class="sub-heading sub-heading sub-heading text-white text-2xl ml-10">Popular Videos<span class="text-slant-color">/</span></h2>
+                        <h2 class="sub-heading sub-heading sub-heading text-white ml-10">Popular Videos<span class="text-slant-color">/</span></h2>
                     </div>
                     <div class="flex">
-                        <div class="relative">
-                            <p>1</p>
-                            <img src="images/gadget2.jpg" alt="computer gadget">
+                        <div class="relative flex">
+                            <p class="bg-text-colors p-2 font-bold rounded-full h-10 w-10 flex items-center justify-center text-white">1</p>
+                            <img src="images/gadget2.jpg" alt="computer gadget" width="120px" height="100px" class="border mt-8">
                         </div>
-                        <div>
-                            <h3>Top 5 Computer Gadget you must have</h3>
-                            <p class="text-base"><i class="fa fa-clock-o"></i>Feb 6, 2017</p>
-                        </div>
-                    </div>
-                    <div class="flex">
-                        <div class="relative">
-                            <p>2</p>
-                            <img src="images/robot2.jpg" alt="robot">
-                        </div>
-                        <div>
-                            <h3>Top 9 new technology future invention gadgets coming in 2017</h3>
-                            <p class="text-base"><i class="fa fa-clock-o"></i>Feb 6, 2017</p>
+                        <div class="ml-5 p-6">
+                            <h3 class="text-white capitalize mt-3">Top 5 Computer Gadget you must have</h3>
+                            <p class="text-base text-light-white"><i class="fa fa-clock-o text-sm">Feb 6, 2017</i></p>
                         </div>
                     </div>
                     <div class="flex">
-                        <div class="relative">
-                            <p>3</p>
-                            <img src="images/amazon2.jpg" alt="amazon">
+                        <div class="relative flex">
+                            <p class="bg-text-colors p-2 font-bold rounded-full h-10 w-10 flex items-center justify-center text-white">2</p>
+                            <img src="images/robot2.jpg" alt="robot" width="200px" height="100px" class="mt-8">
                         </div>
-                        <div>
-                            <h3>10 Things Amazon echo can do that apple siri can't do</h3>
-                            <p class="text-base"><i class="fa fa-clock-o"></i>Feb 6, 2017</p>
-                        </div>
-                    </div>
-                    <div class="flex">
-                        <div class="relative">
-                            <p>4</p>
-                            <img src="images/tim-cook2.jpg" alt="tim cook">
-                        </div>
-                        <div>
-                            <h3>Apple September Event - 2016</h3>
-                            <p class="text-base"><i class="fa fa-clock-o"></i>Feb 6, 2017</p>
+                        <div class="ml-5 p-6">
+                            <h3 class="text-white capitalize mt-3">Top 9 New Technology Future Inventions Gadgets Coming in 2017</h3>
+                            <p class="text-base text-light-white"><i class="fa fa-clock-o text-sm">Feb 6, 2017</i></p>
                         </div>
                     </div>
                     <div class="flex">
-                        <div class="relative">
-                            <p>5</p>
-                            <img src="images/mobile2.jpg" alt="mobile">
+                        <div class="relative flex">
+                            <p class="bg-text-colors p-2 font-bold rounded-full h-10 w-10 flex items-center justify-center text-white">3</p>
+                            <img src="images/amazon2.jpg" alt="amazon" width="200px" height="100px" class="mt-8 border">
                         </div>
-                        <div>
-                            <h3>Samsung Galaxy s8 and s8+: Official Introduction</h3>
-                            <p class="text-base"><i class="fa fa-clock-o"></i>Feb 6, 2017</p>
+                        <div class="ml-5 p-6">
+                            <h3 class="text-white capitalize mt-3">10 Things Amazon echo can do that apple siri can't do</h3>
+                            <p class="text-base text-light-white "><i class="fa fa-clock-o text-sm">Feb 6, 2017</i></p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="relative flex">
+                            <p class="bg-text-colors p-2 font-bold rounded-full h-10 w-10 flex items-center justify-center  text-white">4</p>
+                            <img src="images/tim-cook2.jpg" alt="tim cook" width="200px" height="100px" class="mt-8 border">
+                        </div>
+                        <div class="ml-5 p-6">
+                            <h3 class="text-white">Apple September Event - 2016</h3>
+                            <p class="text-base text-light-white "><i class="fa fa-clock-o text-sm">Feb 6, 2017</i></p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="relative flex">
+                            <p class="bg-text-colors p-2 font-bold rounded-full h-10 w-10 flex items-center justify-center  text-white">5</p>
+                            <img src="images/mobile1.jpg" alt="mobile" width="200px" height="100px" class="mt-8">
+                        </div>
+                        <div class="ml-5 p-6">
+                            <h3 class="text-white capitalize mt-3">Samsung Galaxy s8 and s8+: Official Introduction</h3>
+                            <p class="text-base text-light-white"><i class="fa fa-clock-o text-sm">Feb 6, 2017</i></p>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <img src="images/iphone.jpg" alt="iphone" title="Iphone 7 Trailer">
-                    <div>
-                        <p>Mar 4, 2017</p>
-                        <p>Iphone 7 Trailer 2016</p>
+                <div class="col-start-3 relative">
+                    <img src="images/iphone.jpg" alt="iphone" title="Iphone 7 Trailer" width="px">
+                    <div class="absolute bottom-10 left-5 cursor-pointer">
+                        <p class="text-sm text-light-white"><i class="fa fa-clock-o"></i> Mar 4, 2017</p>
+                        <p class="text-xl text-white">Iphone 7 Trailer 2016</p>
                     </div>
                 </div>
-            </div>
-            
-            <div class="videos-section">
-                    
             </div>
         </section>
-        <section class="videos-two">
-            <div class="main-video">
-                <embed src="" type="">
-                <div class="other-videos">
-                    <div>
+        <section class="videos-two grid grid-cols-3 bg-center bg-cover" style="background-image: url('/public/images/video-bg.jpg')">
+            <div class="main-video col-span-2">
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/206402159?h=fc13c8ffaf" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="other-videos">
+                <div class="p-16 text-white text-sm">
+                    <div class="flex">
+                        <i class="fa fa-play mr-6 mt-0 text-lg"></i>
                         <div>
-                            <i></i>
-                            <p>Most Watched</p>
-                            <p>1/7</p>
+                            <p class="text-xl">Most Watched</p>
+                            <p class="text-base text-sm">1/7 Videos</p>
                         </div>
-                        <div>
-                            <embed src="" type="">
-                            <embed src="" type="">
-                            <embed src="" type="">
-                            <embed src="" type="">
-                            <embed src="" type="">
-                            <embed src="" type="">
-                            <embed src="" type="">
+                    </div>
+                    <div class="divide-solid bg-dark-black divide-light-white" width="30%">
+                        <div class="flex p-2">
+                            <iframe title="vimeo-player" class="ml-5 mr-3" src="https://player.vimeo.com/video/210672131?h=9f37815cd1" width="80" height="50" frameborder="0"></iframe>
+                            <div>
+                                <p>Samsung galaxy s8 and s9 to telefonia milano bronzeti</p>
+                                <p class="text-base">03:34</p>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="flex p-2">
+                            <iframe title="vimeo-player" class="ml-5 mr-3" src="https://player.vimeo.com/video/80339790?h=59af60cb3a" width="80" height="50" frameborder="0"></iframe>
+                                <div>
+                                    <p>FAMILY RECIPE-TITLE SEQUENCE</p>
+                                    <p class="text-base">00:15</p>
+                                </div>
+                        </div>
+                        <hr/>
+                        <div class="flex p-2">
+                            <iframe src="https://youtu.be/FiZqn6fV-4Y" class="ml-5 mr-3" frameborder="0" width="80" height="50"></iframe>
+                            <div>
+                                <p>Top 10 natural wonders of the world in one video 4k</p>
+                                <p class="text-base">06:39</p>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="flex p-2">
+                            <iframe title="vimeo-player"  class="ml-5 mr-3" src="https://player.vimeo.com/video/80339790?h=59af60cb3a" width="80" height="50" frameborder="0"></iframe>
+                               <div>
+                                <p>FAMILY RECIPE-TITLE SEQUENCE</p>
+                                <p class="text-base">00:15</p>
+                               </div>
+                        </div>
+                        <hr/>
+                        <div class="flex p-2">
+                            <iframe title="vimeo-player" class="ml-5 mr-3" src="https://player.vimeo.com/video/80339790?h=59af60cb3a" width="80" height="50" frameborder="0"></iframe>
+                                <div>
+                                    <p>FAMILY RECIPE-TITLE SEQUENCE</p>
+                                    <p class="text-base">00:15</p>
+                                </div>
+                        </div>
+                        <hr/>
+                        <div class="flex p-2">
+                            <iframe title="vimeo-player" class="ml-5 mr-3" src="https://player.vimeo.com/video/80339790?h=59af60cb3a" width="80" height="50" frameborder="0"></iframe>
+                                <div>
+                                    <p>FAMILY RECIPE-TITLE SEQUENCE</p>
+                                    <p class="text-base">00:15</p>
+                                </div>
+                        </div>
+                        <hr/>
+                        <div class="flex p-2">
+                            <iframe title="vimeo-player" class="ml-5 mr-3" src="https://player.vimeo.com/video/80339790?h=59af60cb3a" width="80" height="50" frameborder="0"></iframe>
+                                <div>
+                                    <p>FAMILY RECIPE-TITLE SEQUENCE</p>
+                                    <p class="text-base">00:15</p>
+                                </div>
                         </div>
                     </div>
                 </div>
