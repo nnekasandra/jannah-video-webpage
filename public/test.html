@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Jannah Videos - Watch It Now!</title>
+</head>
+<body style="background-image: url('/public/images/background-img.jpg');" class="bg-clip-padding">
+    <div class="background-overlay bg-dark-black mx-10 my-5">
+        <header class="flex justify-between sticky top-0 bg-dark-black z-10 ">
+                <div class="p-6">
+                    <img src="images/videeo.png" alt="logo">
+                </div>
+                <nav class="cursor-pointer font-bold navbar">
+                    <ul class="flex flex-column items-stretch text-white uppercase text-sm">
+                        <li class="mr-2 border-0 bg-text-colors px-2 py-7">Home <hr class="border-black border mt-2"></li>
+                        <li class="mr-2 hover:border hover:bg-text-colors px-2 py-7">World <i class="fa fa-caret-down"></i></li>
+                        <li class="mr-2 hover:border hover:bg-text-colors px-2 py-7">Technology <i class="fa fa-caret-down"></i></li>
+                        <li class="mr-2 hover:border hover:bg-text-colors px-2 py-7">Tips and Ideas <i class="fa fa-caret-down"></i></li>
+                        <li class="mr-2 hover:border hover:bg-text-colors px-2 py-7">Healthy Foods <i class="fa fa-caret-down"></i></li>
+                        <li class="mr-2 px-2 py-7 hover:text-text-colors capitalize font-light" id="follow"><i class="fa fa-plus"></i>&nbsp;Follow</li>
+                        <li class="mr-2 px-2 py-7 hover:text-text-colors"><i class="fa fa-user-circle"></i></li>
+                        <li class="mr-2 px-2 py-7 hover:text-hover"><i class="fa fa-bars"></i></li>
+                        <li class="mr-2 px-2 py-7 hover:text-hover"><i class="fa fa-search"></i></li>
+                    </ul>
+                </nav>
+        </header>
+        <section class="sub-navigation flex justify-between bg-lighter text-xs ">
+            <ul class="flex flex-row items-center">
+                <li class="ml-8 border-0 bg-lighter text-white p-2 capitalize">Breaking news</li>
+                <li><input type="search" class="bg-transparent w-full border-0 p-2 " placeholder="10 things Amazon Echo can do that Apple's Siri Can't"/></li>
+            </ul>
+            <div class="cursor-pointer">
+                <ul class="flex justify-evenly flex-row list-none p-3 text-light-white">
+                    <li class="mr-3"><i class="fa fa-angle-left border px-2 text-sm border-light-white hover:bg-darker hover:border-0 hover:text-white"></i></li>
+                    <li class="mr-5"><i class="fa fa-angle-right border px-2 text-sm border-light-white hover:bg-darker hover:border-0 hover:text-white"></i></li>
+                    <li class="mr-5 hover:text-hover">All Videos</li>
+                    <li class="mr-5 hover:text-hover">Authors</li>
+                    <li class="mr-5 hover:text-hover">Site Map</li>
+                    <li class="mr-5 hover:text-hover">About Us</li>
+                    <li class="mr-5 hover:text-hover">Contact Us</li>
+                </ul>
+            </div>
+            <div class="border divide-light-white text-light-white text-sm cursor-pointer bg-darker absolute top-1 right-20 hidden" id="sm-links">
+                <div class="flex p-2 hover:bg-text-colors hover:text-white">
+                    <p class="ml-3"><i class="fa fa-facebook"></i></p>
+                    <p class="ml-5 mr-3">Facebook</p>
+                </div>
+                <hr>
+                <div class="flex p-2 hover:bg-you-tube hover:text-white">
+                    <p class="ml-3"><i class="fa fa-youtube-play"></i></p>
+                    <p class="ml-5 mr-3">Youtube</p>
+                </div>
+                <hr>
+                <div class="flex p-2 hover:bg-vimeo hover:text-white">
+                    <p class="ml-3"><i class="fa fa-vimeo"></i></p>
+                    <p class="ml-5 mr-3">Vimeo</p>
+                </div>
+                <hr>
+                <div class="flex p-2 hover:bg-soundcloud hover:text-white">
+                    <p class="ml-3"><i class="fa fa-soundcloud"></i></p>
+                    <p class="ml-5 mr-3">SoundCloud</p>
+                </div>
+                <hr>
+                <div class="flex p-2 hover:bg-twitch hover:text-white">
+                    <p class="ml-3"><i class="fa fa-twitch"></i></p>
+                    <p class="ml-5 mr-3">Twitch</p>
+                </div>
+                <hr>
+                <div class="flex p-2 hover:bg-snapchat hover:text-white">
+                    <p class="ml-3"><i class="fa fa-snapchat"></i></p>
+                    <p class="ml-5 mr-3">Snapchat</p>
+                </div>
+            </div>
+        </section>
+        <section class="news bg-darker">
+            <h2 class="sub-heading text-white text-xl ml-10 pt-5 pb-5">Most Recent <span class="text-slant-color">/</span></h2>
+            <div class="grid grid-cols-3 ml-10 cursor-pointer text-white justify-between pb-8">
+                <div class="relative">
+                    <div><img src="images/robot2.jpg" alt="robot"></div>
+                    <div class="flex absolute top-5 left-3">
+                        <p class="bg-text-colors text-sm border-0 rounded h-8 p-1">Computing</p>
+                        <p><i class="fa fa-play border-2 rounded-full h-10 w-10 flex items-center ml-60 justify-center text-white text-2xl font-bold"></i></p>
+                    </div>
+                    <div class="absolute bottom-3 left-2">
+                        <p class="text-xs mb-3">Feb 6,2017</p>
+                        <h3 class="text-lg font-bold capitalize">Top 9 new technology future invention gadget coming up in 2017</h3>
+                        <p class="text-xs hidden">Stay focused and remember we build the best wordpress themes and Magazine themes......</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div><img src="images/mobile2.jpg" alt="mobile device"></div>
+                    <div class="flex absolute top-5 left-3">
+                        <p class="bg-text-colors text-sm border-0 rounded h-8 p-1">Mobile</p>
+                        <p><i class="fa fa-play border-2 rounded-full h-10 w-10 flex items-center justify-center ml-60 text-2xl"></i></p>
+                    </div>
+                    <div class="absolute bottom-3 left-2">
+                        <p class="text-xs mb-3">Feb 8,2016</p>
+                        <h3 class="text-lg font-bold capitalize">Samsung Galaxy S8 and S9+: Official<br> Introduction</h3>
+                        <p class="text-xs hidden">Stay focused and remember we build the best wordpress themes and Magazine themes......</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div><img src="images/tim-cook2.jpg" alt="Tim cook news"></div>
+                    <div class="flex absolute top-5 left-3">
+                        <p class="bg-text-colors text-sm border-0 rounded h-8 p-1">Electronics</p>
+                        <p><i class="fa fa-play border-2 rounded-full h-10 w-10 flex items-center justify-center ml-60 text-2xl"></i></p>
+                    </div>
+                    <div class="absolute bottom-3 left-2">
+                        <p class="text-xs mb-3">Nov 6,2015</p>
+                        <h3 class="text-lg font-bold capitalize">Apple September Event 2016</h3>
+                        <p class="text-xs hidden">Stay focused and remember we build the best wordpress themes and Magazine themes......</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="side-buttons">
+            <div class="fixed right-0 top-72 cursor-pointer z-10">
+                <p class="border-0 bg-hover p-5 text-xl text-light-white w-24 h-24 hover:bg-text-colors text-center uppercase font-bold mb-1">25+<br><span class="text-sm">Demos</span></p>
+                <p class="border-0 bg-darker p-5 text-xs text-light-white text-center hover:bg-lighter uppercase"><i class="fa fa-shopping-basket text-3xl"></i><br>Buy now!</p>
+            </div>
+            <p href="#top" class="border-0 bg-text-colors p-1 flex items-center justify-center fixed right-10 bottom-12 text-white text-xs cursor-pointer h-8 w-8 text-center grid align-center justify-center"><i class="fa fa-chevron-up"></i></p>
+        </div>
+        <section class="bg-light">
+            <div class="grid grid-cols-3 m-8 mb-8">
+                <div class="col-span-2">
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/210672131?h=9f37815cd1" height="520" class="w-full" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="text-white border-0 second-section">
+                    <div class="flex p-5">
+                        <i class="fa fa-play mr-6 mt-0 text-3xl"></i>
+                        <div>
+                            <p class="text-lg font-bold">Most Watched</p>
+                            <p class="text-base text-xs base">1/7 Videos</p>
+                        </div>
+                    </div>
+                    <div class="videos bg-border-color border border-video-bg overflow-y-scroll scroll-function">
+                        <div class="flex p-3 text-xs">
+                            <p class="mt-4">1</p>
+                            <iframe title="vimeo-player" class="ml-5 mr-3" src="https://player.vimeo.com/video/210672131?h=9f37815cd1" width="80" height="45" frameborder="0"></iframe>
+                            <div class="capitalize">
+                                <p>Samsung galaxy s8 and s9 to telefonia milano bronzeti</p>
+                                <p class="text-base text-xs base">03:34</p>
+                            </div>
+                        </div>
+                        <hr class="border-video-bg">
+                        <div class="flex p-3 text-xs">
+                            <p class="mt-4">2</p>
+                            <iframe title="vimeo-player" src="https://player.vimeo.com/video/80339790?h=59af60cb3a" class="ml-5 mr-3" width="80" height="45" frameborder="0" allowfullscreen></iframe>
+                            <div>
+                                <p>FAMILY RECIPES - TITLE SEQUENCE</p>
+                                <p class="text-base text-xs base">00:15</p>
+                            </div>
+                        </div>
+                        <hr class="border-video-bg">
+                        <div class="flex p-3 text-xs">
+                            <p class="mt-4">3</p>
+                            <iframe title="vimeo-player" src="https://youtu.be/FiZqn6fV-4Y" class="ml-5 mr-3" width="80" height="45" frameborder="0" allowfullscreen></iframe>
+                            <div class="capitalize">
+                                <p>Top 10 Natural Wonders of the World in video 4K</p>
+                                <p class="text-base text-xs base">06:39</p>
+                            </div>
+                        </div>
+                        <hr class="border-video-bg">
+                        <div class="flex p-3 text-xs">
+                            <p class="mt-4">4</p>
+                            <iframe title="vimeo-player" src="https://youtu.be/FiZqn6fV-4Y" class="ml-5 mr-3" width="80" height="45" frameborder="0" allowfullscreen></iframe>
+                            <div class="capitalize">
+                                <p>Hidden miracles of the natural world | Louie Schwartzberg</p>
+                                <p class="text-base text-xs base">07:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-video-bg">
+                        <div class="flex p-3 text-xs">
+                            <p class="mt-4">5</p>
+                            <iframe src="https://www.youtube.com/watch?v=iwl6uD9A8Qg" class="ml-5 mr-3" width="80" height="45"></iframe>
+                            <div class="capitalize">
+                                <p>The Most Earth Size, Habitable Zone Planets around a Single Star on This Week @NASA - 02/24/2017</p>
+                                <p class="text-base text-xs base">03:28</p>
+                            </div>
+                        </div>
+                        <hr class="border-video-bg">
+                        <div class="flex p-3 text-xs">
+                            <p class="mt-4">6</p>
+                            <iframe src="https://www.youtube.com/watch?v=iwl6uD9A8Qg" class="ml-5 mr-3" width="80" height="45"></iframe>
+                            <div class="capitalize">
+                                <p>Study Confirms Biofuels Reduce Jet Engine Pollution on This Week @NASA - March 17, 2017</p>
+                                <p class="text-base text-xs base">03:11</p>
+                            </div>
+                        </div>
+                        <hr class="border-video-bg">
+                        <div class="flex p-3 text-xs">
+                            <p class="mt-4">7</p>
+                            <iframe src="https://www.youtube.com/watch?v=iwl6uD9A8Qg" class="ml-5 mr-3" width="80" height="45"></iframe>
+                            <div class="capitalize">
+                                <p>President Signs NASA Transition Authorization Act on This Week @NASA - March 24, 2017</p>
+                                <p class="text-base text-xs base">03:58</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-darker">
+            <div class="grid grid-cols-3">
+                <div class="bg-background border border-light-white m-8 mt-0 col-span-2 border-b-0">
+                    <div><h2 class="sub-heading text-white text-xl ml-10 pt-5 pb-5">Electronics<span class="text-slant-color">/</span></h2></div>
+                    <div class="grid grid-cols-2 gap-5 px-8">
+                        <div class="relative">
+                            <div class="cursor-pointer"><img src="images/gadget2.jpg" alt="computer gadget" class="w-max"></div>
+                            <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                            <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Electronics</p>
+                            <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                                <div class="flex base">
+                                    <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Tony Stark</p>
+                                    <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                                </div>
+                                <div class="flex base">
+                                    <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                                    <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;3,088</p>
+                                </div>
+                            </div>
+                            <h3 class="text-white text-2xl hover:text-hover cursor-pointer">Top 5 - Computer Gadget You Must Have</h3>
+                            <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                            <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                        </div>
+                        <div class="relative">
+                            <div class="cursor-pointer"><img src="images/amazon2.jpg" alt="amazon" class="w-max"></div>
+                            <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                            <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Electronics</p>
+                            <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                                <div class="flex base">
+                                    <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Danny Rand</p>
+                                    <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                                </div>
+                                <div class="flex base">
+                                    <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                                    <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;2,593</p>
+                                </div>
+                            </div>
+                            <h3 class="text-white text-2xl hover:text-hover cursor-pointer">10 Things Amazon Echo Can Do That Apple's Siri Can't</h3>
+                            <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                            <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                        </div>
+                        <div class="relative">
+                            <div class="cursor-pointer"><img src="images/google-home1.jpg" alt="Google home" class="w-max"></div>
+                            <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                            <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Electronics</p>
+                            <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                                <div class="flex base">
+                                    <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Tony Stark</p>
+                                    <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2016</p>
+                                </div>
+                                <div class="flex base">
+                                    <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                                    <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;1,009</p>
+                                </div>
+                            </div>
+                            <h3 class="text-white text-2xl hover:text-hover cursor-pointer">Google Home vs Amazon Echo - Which is Best?</h3>
+                            <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                            <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                        </div>
+                        <div class="relative">
+                            <div class="cursor-pointer"><img src="images/tim-cook2.jpg" alt="amazon" class="w-max"></div>
+                            <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                            <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Electronics</p>
+                            <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                                <div class="flex base">
+                                    <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Tony Stark</p>
+                                    <p><i class="fa fa-clock-o"></i>&nbsp;Nov 6, 2016</p>
+                                </div>
+                                <div class="flex base">
+                                    <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                                    <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;2,044</p>
+                                </div>
+                            </div>
+                            <h3 class="text-white text-2xl hover:text-hover cursor-pointer">Apple - September Event 2016</h3>
+                            <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                            <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                        </div>
+                        <div class="col-start-1 text-white p-4 text-center col-end-3 border border-l-0 border-r-0">
+                            <button>Show More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-video bg-background border mr-8">
+                    <div class="flex text-white p-5">
+                        <p class="mr-4 mt-2 text-light-white"><i class="fa fa-file-text-o"></i></p>
+                        <h2 class="font-bold">Popular Videos <span class="text-slant-color text-2xl">/</span></h2>
+                    </div>
+                    <div class="flex relative">
+                        <p class="bg-text-colors p-2 font-bold rounded-full h-10 w-10 flex items-center justify-center text-white">1</p>
+                        <img src="images/gadget2.jpg" alt="computer gadget" width="150px" height="100px" class="border">
+                        <div class="">
+                            <h3 class="text-white capitalize mt-3">Top 5 Computer Gadget you must have</h3>
+                            <p class="text-base text-light-white"><i class="fa fa-clock-o text-sm">Feb 6, 2017</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-start-3 relative">
+                    <img src="images/iphone.jpg" alt="iphone" title="Iphone 7 Trailer">
+                    <div class="absolute bottom-10 left-5 cursor-pointer">
+                        <p class="text-xs text-light-white"><i class="fa fa-clock-o"></i> Mar 4, 2017</p>
+                        <p class="text-lg font-bold text-white">Iphone 7 Trailer 2016</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="background-image: url(/public/images/video-bg.jpg);">
+            <div class="grid grid-cols-3 p-8">
+                <div class="col-span-2">
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/206402159?h=fc13c8ffaf" height="520" class="w-full" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="text-white border-0 second-section">
+                    <div class="flex p-5">
+                        <i class="fa fa-play mr-6 mt-0 text-3xl"></i>
+                        <div>
+                            <p class="text-lg font-bold">And More..</p>
+                            <p class="text-base text-xs base">1/7 Videos</p>
+                        </div>
+                    </div>
+                    <div class="videos bg-bg-color border border-video-bg overflow-y-scroll scroll-function">
+                        <div class="flex p-3 text-xs">
+                            <p class="mt-4">1</p>
+                            <iframe title="vimeo-player" class="ml-5 mr-3" src="https://player.vimeo.com/video/210672131?h=9f37815cd1" width="80" height="45" frameborder="0"></iframe>
+                            <div class="capitalize">
+                                <p>Samsung galaxy s8 and s9 to telefonia milano bronzeti</p>
+                                <p class="text-base text-xs base">03:34</p>
+                            </div>
+                        </div>
+                        <hr class="border-video-bg">
+                        <div class="flex p-3 text-xs">
+                            <p class="mt-4">2</p>
+                            <iframe title="vimeo-player" src="https://player.vimeo.com/video/80339790?h=59af60cb3a" class="ml-5 mr-3" width="80" height="45" frameborder="0" allowfullscreen></iframe>
+                            <div>
+                                <p>FAMILY RECIPES - TITLE SEQUENCE</p>
+                                <p class="text-base text-xs base">00:15</p>
+                            </div>
+                        </div>
+                        <hr class="border-video-bg">
+                        <div class="flex p-3 text-xs">
+                            <p class="mt-4">3</p>
+                            <iframe title="vimeo-player" src="https://youtu.be/FiZqn6fV-4Y" class="ml-5 mr-3" width="80" height="45" frameborder="0" allowfullscreen></iframe>
+                            <div class="capitalize">
+                                <p>Top 10 Natural Wonders of the World in video 4K</p>
+                                <p class="text-base text-xs base">06:39</p>
+                            </div>
+                        </div>
+                        <hr class="border-video-bg">
+                        <div class="flex p-3 text-xs">
+                            <p class="mt-4">4</p>
+                            <iframe title="vimeo-player" src="https://youtu.be/FiZqn6fV-4Y" class="ml-5 mr-3" width="80" height="45" frameborder="0" allowfullscreen></iframe>
+                            <div class="capitalize">
+                                <p>Hidden miracles of the natural world | Louie Schwartzberg</p>
+                                <p class="text-base text-xs base">07:24</p>
+                            </div>
+                        </div>
+                        <hr class="border-video-bg">
+                        <div class="flex p-3 text-xs">
+                            <p class="mt-4">5</p>
+                            <iframe src="https://www.youtube.com/watch?v=iwl6uD9A8Qg" class="ml-5 mr-3" width="80" height="45"></iframe>
+                            <div class="capitalize">
+                                <p>The Most Earth Size, Habitable Zone Planets around a Single Star on This Week @NASA - 02/24/2017</p>
+                                <p class="text-base text-xs base">03:28</p>
+                            </div>
+                        </div>
+                        <hr class="border-video-bg">
+                        <div class="flex p-3 text-xs">
+                            <p class="mt-4">6</p>
+                            <iframe src="https://www.youtube.com/watch?v=iwl6uD9A8Qg" class="ml-5 mr-3" width="80" height="45"></iframe>
+                            <div class="capitalize">
+                                <p>Study Confirms Biofuels Reduce Jet Engine Pollution on This Week @NASA - March 17, 2017</p>
+                                <p class="text-base text-xs base">03:11</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="">
+            <div class="grid grid-cols-3 p-8 gap-5">
+                <div class="col-span-2">
+                    <div class="p-6">
+                        <img src="images/banner.jpg" alt="jannah wordpress banner">
+                    </div>
+                    <div class="grid-item border border-b-0 bg-background p-8 pb-0">
+                        <div class="flex justify-between pb-5">
+                            <h2 class="sub-heading text-white text-lg">Technology <span class="text-slant-color text-2xl">/</span></h2>
+                            <div class="cursor-pointer">
+                                <ul class="text-xs flex text-white">
+                                    <li class="mr-4 text-text-colors p-1">All</li>
+                                    <li class="mr-4 hover:bg-text-colors hover:border rounded p-1">Computing</li>
+                                    <li class="mr-4 hover:bg-text-colors hover:border rounded p-1">Electronics</li>
+                                    <li class="mr-4 hover:bg-text-colors hover:border rounded p-1">Mobile</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="relative">
+                                <div class="cursor-pointer"><img src="images/gadget2.jpg" alt="computer gadget" class="w-max"></div>
+                                <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                                <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Electronics</p>
+                                <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                                    <div class="flex base">
+                                        <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Tony Stark</p>
+                                        <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                                    </div>
+                                    <div class="flex base">
+                                        <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                                        <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;3,088</p>
+                                    </div>
+                                </div>
+                                <h3 class="text-white text-xl hover:text-hover cursor-pointer">Top 5 - Computer Gadget You Must Have</h3>
+                                <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                                <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                            </div>
+                            <div class="relative">
+                                <div class="cursor-pointer"><img src="images/fake-iphone1.jpg" alt="man holding two iphones" class="w-max"></div>
+                                <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                                <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Mobile</p>
+                                <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                                    <div class="flex base">
+                                        <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Tony Stark</p>
+                                        <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                                    </div>
+                                    <div class="flex base">
+                                        <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                                        <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;1,605</p>
+                                    </div>
+                                </div>
+                                <h3 class="text-white text-xl hover:text-hover cursor-pointer">How To Spot A Fake iPhone</h3>
+                                <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                                <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                            </div>
+                            <div class="relative">
+                                <div class="cursor-pointer"><img src="images/amazon2.jpg" alt="amazon" class="w-max"></div>
+                                <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                                <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Electronics</p>
+                                <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                                    <div class="flex base">
+                                        <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Danny Rand</p>
+                                        <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                                    </div>
+                                    <div class="flex base">
+                                        <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                                        <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;1,605</p>
+                                    </div>
+                                </div>
+                                <h3 class="text-white text-xl hover:text-hover cursor-pointer">10 Things Amazon Echo Can Do That Apple's Siri Can't</h3>
+                                <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                                <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                            </div>
+                            <div class="relative">
+                                <div class="cursor-pointer"><img src="images/robot2.jpg" alt="robot" class="w-max"></div>
+                                <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                                <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Computing</p>
+                                <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                                    <div class="flex base">
+                                        <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Tony Stark</p>
+                                        <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                                    </div>
+                                    <div class="flex base">
+                                        <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                                        <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;1,605</p>
+                                    </div>
+                                </div>
+                                <h3 class="text-white text-xl hover:text-hover cursor-pointer">Top 9 New Technology Future Inventions Gadgets Coming in 2017</h3>
+                                <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                                <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                            </div>
+                            <div class="relative">
+                                <div class="cursor-pointer"><img src="images/google-home1.jpg" alt="Google home" class="w-max"></div>
+                                <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                                <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Electronics</p>
+                                <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                                    <div class="flex base">
+                                        <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Tony Stark</p>
+                                        <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                                    </div>
+                                    <div class="flex base">
+                                        <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                                        <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;1,605</p>
+                                    </div>
+                                </div>
+                                <h3 class="text-white text-xl hover:text-hover cursor-pointer">Google Home vs Amazon Echo - Which is Best?</h3>
+                                <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                                <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                            </div>
+                            <div class="relative">
+                                <div class="cursor-pointer"><img src="images/drone.jpg" alt="drone" class="w-max"></div>
+                                <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                                <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Mobile</p>
+                                <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                                    <div class="flex base">
+                                        <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Tony Stark</p>
+                                        <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                                    </div>
+                                    <div class="flex base">
+                                        <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                                        <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;1,605</p>
+                                    </div>
+                                </div>
+                                <h3 class="text-white text-xl hover:text-hover cursor-pointer">World's Smallest Video Drone!</h3>
+                                <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                                <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                            </div>
+                            <div class="relative">
+                                <div class="cursor-pointer"><img src="images/think.jpg" alt="man thinking" class="w-max"></div>
+                                <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                                <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Mobile</p>
+                                <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                                    <div class="flex base">
+                                        <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Tony Stark</p>
+                                        <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                                    </div>
+                                    <div class="flex base">
+                                        <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                                        <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;1,605</p>
+                                    </div>
+                                </div>
+                                <h3 class="text-white text-xl hover:text-hover cursor-pointer">Healthy & Quick Breakfast Ideas!</h3>
+                                <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                                <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                            </div>
+                            <div class="relative">
+                                <div class="cursor-pointer"><img src="images/mobile2.jpg" alt="Samsung phones" class="w-max"></div>
+                                <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                                <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Mobile</p>
+                                <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                                    <div class="flex base">
+                                        <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Tony Stark</p>
+                                        <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                                    </div>
+                                    <div class="flex base">
+                                        <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                                        <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;1,605</p>
+                                    </div>
+                                </div>
+                                <h3 class="text-white text-xl hover:text-hover cursor-pointer">Samsung Galaxy S8 and S8+: Official Introduction</h3>
+                                <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                                <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                            </div>
+                            <div class="col-start-1 text-white p-4 text-center col-end-3 border border-l-0 border-r-0 hover:text-hover">
+                                <button>Show More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-grid-container">
+                    <div class="bg-background border p-4">
+                        <div class="flex text-white p-4">
+                            <p class="mr-4 mt-2 text-light-white"><i class="fa fa-file-text-o"></i></p>
+                            <h2 class="font-bold">Most Popular Videos <span class="text-slant-color text-2xl">/</span></h2>
+                        </div>
+                        <div class="relative">
+                            <img src="images/gadget2.jpg"  alt="computer gadget">
+                            <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                            <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Electronics</p>
+                            <h3 class="text-white text-xl font-bold hover:text-hover cursor-pointer">Top 5 - Computer Gadget You Must Have</h3>
+                            <p class="text-white text-xs"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                        </div>
+                        <div class="flex my-5 relative">
+                            <img src="images/robot2.jpg" alt="robot" width="120">
+                            <p><i class="fa fa-play border-2 rounded-full h-8 w-8 flex items-center justify-center text-lg text-white absolute top-5 left-10"></i></p>
+                            <div class="ml-5">
+                                <h3 class="text-white text-sm font-bold hover:text-hover cursor-pointer">Top 9 New Technology Future Inventions Gadgets Coming in 2017</h3>
+                                <p class="base text-white"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                            </div>
+                        </div>
+                        <div class="flex my-5 relative">
+                            <img src="images/amazon2.jpg" alt="robot" width="120">
+                            <p><i class="fa fa-play border-2 rounded-full h-8 w-8 flex items-center justify-center text-lg text-white absolute top-5 left-10"></i></p>
+                            <div class="ml-5">
+                                <h3 class="text-white text-sm font-bold hover:text-hover cursor-pointer">10 Things Amazon Echo Can Do That Apple's Siri Can't</h3>
+                                <p class="base text-white"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-background border p-4 mt-10">
+                        <div class="flex text-white p-4">
+                            <p class="mr-4 mt-2 text-light-white"><i class="fa fa-file-text-o"></i></p>
+                            <h2 class="font-bold">Don't Miss <span class="text-slant-color text-2xl">/</span></h2>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="relative">
+                                <div><img src="images/fake-iphone1.jpg" alt="man holding two phones" width="150"></div>
+                                <p><i class="fa fa-play border-2 rounded-full h-8 w-8 flex items-center justify-center text-lg text-white absolute top-9 left-14"></i></p>
+                                <div>
+                                    <h3 class="text-white text-sm font-bold hover:text-hover cursor-pointer pt-3 pb-2">How To Spot A Fake iPhone</h3>
+                                    <p class="base text-white"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                                </div>
+                            </div>
+                            <div class="relative">
+                                <div><img src="images/google-home1.jpg" alt="man holding two phones" width="150"></div>
+                                <p><i class="fa fa-play border-2 rounded-full h-8 w-8 flex items-center justify-center text-lg text-white absolute top-9 left-14"></i></p>
+                                <div>
+                                    <h3 class="text-white text-sm font-bold hover:text-hover cursor-pointer pt-3 pb-2">Google Home vs Amazon Echo - Which is Best?</h3>
+                                    <p class="base text-white"><i class="fa fa-clock-o"></i>&nbsp;Jan 6, 2016</p>
+                                </div>
+                            </div>
+                            <div class="relative">
+                                <div><img src="images/animal1.jpg" alt="animal pearls" width="150"></div>
+                                <p><i class="fa fa-play border-2 rounded-full h-8 w-8 flex items-center justify-center text-lg text-white absolute top-9 left-14"></i></p>
+                                <div>
+                                    <h3 class="text-white text-sm font-bold hover:text-hover cursor-pointer pt-3 pb-2">World's 10 BIGGEST ANIMALS Of All Time</h3>
+                                    <p class="base text-white"><i class="fa fa-clock-o"></i>&nbsp;Oct 6, 2016</p>
+                                </div>
+                            </div>
+                            <div class="relative">
+                                <div><img src="images/microsoft1.jpg" alt="man holding two phones" width="150"></div>
+                                <p><i class="fa fa-play border-2 rounded-full h-8 w-8 flex items-center justify-center text-lg text-white absolute top-9 left-14"></i></p>
+                                <div>
+                                    <h3 class="text-white text-sm font-bold hover:text-hover cursor-pointer pt-3 pb-2">Introducing Microsoft Surface Studio</h3>
+                                    <p class="base text-white"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-background border border-bg-color p-4 mt-10 cursor-pointer">
+                        <div class="flex text-white p-4">
+                            <p class="mr-4 mt-2 text-light-white"><i class="fa fa-youtube-play"></i></p>
+                            <h2 class="font-bold">Subscribe to our channel  <span class="text-slant-color text-2xl">/</span></h2>
+                        </div>
+                        <div class="flex items-center justify-center pb-10">
+                            <img src="images/unbox.jpg" class="border border-light-white h-12 rounded" alt="unbox logo">
+                            <div class="ml-3">
+                                <h4 class="text-lighter text-sm hover:underline">Unbox Therapy</h4>
+                                <div class="flex text-sm rounded">
+                                    <p class="bg-you-tube text-center p-1 text-white"><i class="fa fa-youtube-play"></i> YouTube</p>
+                                    <p class="bg-white p-1 text-center text-xs">18M</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-background border border-bg-color p-4 mt-10 cursor-pointer">
+                        <div class="flex text-white p-4">
+                            <p class="mr-4 mt-2 text-light-white"><i class="fa fa-thumbs-up"></i></p>
+                            <h2 class="font-bold">Follow Us  <span class="text-slant-color text-2xl">/</span></h2>
+                        </div>
+                        <div class="grid grid-cols-2 gap-5 p-4">
+                            <div class="cursor-pointer flex">
+                                <p class="h-9 w-9 hover:bg-text-colors border-0 rounded-full bg-hover grid items-center justify-center text-white"><i class="fa fa-facebook"></i></p>
+                                <div class="ml-3 text-white hover:text-light-white">
+                                    <p class="text-sm">14,844</p>
+                                    <p class="text-base base">Fans</p>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer flex">
+                                <p class="h-9 w-9 hover:bg-text-colors border-0 rounded-full bg-twitter grid items-center justify-center text-white"><i class="fa fa-twitter"></i></p>
+                                <div class="ml-3 text-white hover:text-light-white">
+                                    <p class="text-sm">1,127</p>
+                                    <p class="text-base base">Followers</p>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer flex">
+                                <p class="h-9 w-9 hover:bg-youtube-hover border-0 rounded-full bg-youtube grid items-center justify-center text-white"><i class="fa fa-youtube-play"></i></p>
+                                <div class="ml-3 text-white hover:text-light-white">
+                                    <p class="text-sm">44,600</p>
+                                    <p class="text-base base">Followers</p>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer flex">
+                                <p class="h-9 w-9 hover:bg-instagram-hover border-0 rounded-full bg-instagram grid items-center justify-center text-white"><i class="fa fa-instagram"></i></p>
+                                <div class="ml-3 text-white hover:text-light-white">
+                                    <p class="text-sm">0</p>
+                                    <p class="text-base base">Followers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10 p-4 sticky top-10">
+                        <img src="images/banner2.jpg" alt="video ads">
+                    </div>
+            </div>
+        </section>
+        <section>
+            <div class="bg-background border border-border-test m-8 p-5 cursor-pointer">
+                <div>
+                    <h2 class="sub-heading text-white text-lg py-2">Tips and Ideas <span class="text-slant-color text-2xl">/</span></h2>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="relative">
+                            <div class="cursor-pointer"><img src="images/microsoft3.jpg" alt="amazon" class="w-max"></div>
+                            <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                            <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Tips & Ideas</p>
+                            <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                                <div class="flex base">
+                                    <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Danny Rand</p>
+                                    <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                                </div>
+                                <div class="flex base">
+                                    <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                                    <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;858</p>
+                                </div>
+                            </div>
+                            <h3 class="text-white text-xl hover:text-hover cursor-pointer">Introducing Microsoft Surface Studio</h3>
+                            <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                            <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                        </div>
+                        <div class="relative">
+                            <div class="cursor-pointer"><img src="images/laptop1.jpg" alt="amazon" class="w-max"></div>
+                            <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                            <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Tips & Ideas</p>
+                            <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                                <div class="flex base">
+                                    <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Tony Stark</p>
+                                    <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                                </div>
+                                <div class="flex base">
+                                    <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                                    <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;729</p>
+                                </div>
+                            </div>
+                            <h3 class="text-white text-xl hover:text-hover cursor-pointer">Guide to buying a used laptop computer from another person</h3>
+                            <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                            <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                        </div>
+                        <div class="relative">
+                            <div class="cursor-pointer"><img src="images/driver.jpg" alt="driving" class="w-max"></div>
+                            <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                            <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Tips & Ideas</p>
+                            <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                                <div class="flex base">
+                                    <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Danny Rand</p>
+                                    <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                                </div>
+                                <div class="flex base">
+                                    <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                                    <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;440</p>
+                                </div>
+                            </div>
+                            <h3 class="text-white text-xl hover:text-hover cursor-pointer">10 Tips For New Drivers</h3>
+                            <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                            <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                        </div>
+                    </div>
+                    <hr class="mt-5">
+                    <div class="grid items-center justify-center mt-5 text-white hover:text-hover text-sm cursor-pointer font-bold">
+                        <button>Load More</button>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="bg-dark-black">
+            <hr class="border-3 bg-text-colors">
+            <div class="grid">
+                <div>
+                    <h2 class="font-bold">Categories <span class="text-slant-color text-2xl">/</span></h2> 
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

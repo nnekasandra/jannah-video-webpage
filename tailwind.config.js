@@ -3,9 +3,6 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      backgroundImage: {
-        'hero-pattern': "url('public/images/bg-dots.png')",
-       },
        colors: {
         'dark-black': '#2c2f34',
         'text-colors': '#00adef',
@@ -15,7 +12,24 @@ module.exports = {
         'lighter': '#ffffff1a',
         'light-white': '#ccc',
         'slant-color': '#00adef',
-        'hot-color': '#f3502a' 
+        'hot-color': '#f3502a',
+        'you-tube': '#FF0000',
+        'vimeo' : '  #86c9ef',
+        'spotify': '#1DB954',
+        'snapchat': '#fffc00',
+        'twitch': '#6441a5',
+        'soundcloud': '#ff8800',
+        'video-bg': '#ffffff0d',
+        'border-color': '#0000000d',
+        'background':'#1a1b1f',
+        'bg-color':'#17171a',
+        'twitter': '#00acee',
+        'instagram': '#C13584',
+        'instagram-hover': '#E1306C',
+        'youtube': '#c4302b',
+        'youtube-hover': '#9b2622',
+        'facebook': '#3b5998',
+        'border-test': '#aca6a6'
       }
     },
     container:{

@@ -13,4 +13,42 @@
 .navs:hover{
     @apply border bg-hover px-3 py-7 rounded;
     border: solid #ffffff1a;
+    background-color: #0000000d;
 }
+@layer utilities{
+    li.follow:hover + .sm-links{
+        visibility: visible;
+     }    
+}
+.base{
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background:#1a1b1f;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      display: none;
+  }
+  .scroll-function{
+      height: 430px;
+      scrollbar-width: 10px;
+      scrollbar-color: #1a1b1f;
+  }
+  img{
+      max-width: 100%;
+  }
+  header{
+      height: 91px;
+  }
+  .sub-navigation{
+      height: 35px;
+  }
