@@ -24,6 +24,10 @@
     font-size: 0.75rem;
     line-height: 1rem;
 }
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -51,4 +55,13 @@
   }
   .sub-navigation{
       height: 35px;
+  }
+  .section{
+      grid-template-rows: repeat(2, 570px);
+  }
+  #sm-links{
+      display: none;
+  }
+  #follow:hover #sm-links{
+      display: block;
   }

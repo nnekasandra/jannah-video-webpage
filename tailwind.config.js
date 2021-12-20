@@ -29,7 +29,8 @@ module.exports = {
         'youtube': '#c4302b',
         'youtube-hover': '#9b2622',
         'facebook': '#3b5998',
-        'border-test': '#aca6a6'
+        'border-test': '#aca6a6',
+        'footer': '#161619'
       }
     },
     container:{
