@@ -31,7 +31,13 @@ module.exports = {
         'facebook': '#3b5998',
         'border-test': '#aca6a6',
         'footer': '#161619'
-      }
+      },
+      screens: {
+        'xl': '1200px',
+        'lg': '1000px',
+        'md': '768px'
+        // => @media (min-width: 1200px) { ... }
+      },
     },
     container:{
       center: true,

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>nav bar</title>
+</head>
+<body>
+    <header class="flex justify-between items-center sticky top-0 bg-dark-black z-20 ">
+        <div class="p-4 md:p-6">
+            <img src="images/videeo.png" alt="logo">
+        </div>
+        <nav class="cursor-pointer md:font-bold navbar">
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+            <i class="fa fa-th"></i>
+            </label>
+            <ul class="flex flex-col items-stretch text-white md:uppercase md:flex-row text-sm">
+                <li class="mr-2 md:border-0 md:bg-text-colors md:px-1 lg:px-2 md:py-7 text-white">Home <hr class=" border-light-white md:border-black md:border mt-2"></li>
+                <li class="mr-2 md:border-0 md:hover:bg-text-colors md:px-1 lg:px-2 md:py-7  text-white">World <i class="fa fa-caret-down opacity-0 lg:opacity-100"></i> <hr class=" border-light-white md:hidden mt-2"></li>
+                <li class="mr-2 md:border-0 md:hover:bg-text-colors md:px-2 lg:px-2 md:py-7 text-white">Technology <i class="fa fa-caret-down opacity-0 lg:opacity-100"></i><hr class=" border-light-white md:hidden mt-2"></li>
+                <li class="mr-2 md:border-0 md:hover:bg-text-colors md:px-2 lg:px-2 md:py-7 text-white">Tips and Ideas <i class="fa fa-caret-down icons opacity-0 lg:opacity-100"></i><hr class=" border-light-white md:hidden mt-2"></li>
+                <li class="mr-2 md:border-0 md:hover:bg-text-colors md:px-2 lg:px-2 md:py-7 text-white">Healthy Foods <i class="fa fa-caret-down icons opacity-0 lg:opacity-100"></i><hr class=" border-light-white md:hidden mt-2"></li>
+                <li class="mr-2 px-2 py-7 hover:text-text-colors capitalize font-light relative inline-block opacity-0 md:opacity-100" id="follow"><i class="fa fa-plus"></i>&nbsp;Follow
+                    <ul class="sm-links">
+                        <div class="border divide-border-test min-w-max absolute text-light-white text-sm cursor-pointer bg-background" id="sm-links">
+                            <div class="flex p-2 hover:bg-text-colors hover:text-white">
+                                <p class="ml-3"><i class="fa fa-facebook"></i></p>
+                                <p class="ml-5 mr-3">Facebook</p>
+                            </div>
+                            <hr>
+                            <div class="flex p-2 hover:bg-you-tube hover:text-white">
+                                <p class="ml-3"><i class="fa fa-youtube-play"></i></p>
+                                <p class="ml-5 mr-3">Youtube</p>
+                            </div>
+                            <hr>
+                            <div class="flex p-2 hover:bg-vimeo hover:text-white">
+                                <p class="ml-3"><i class="fa fa-vimeo"></i></p>
+                                <p class="ml-5 mr-3">Vimeo</p>
+                            </div>
+                            <hr>
+                            <div class="flex p-2 hover:bg-soundcloud hover:text-white">
+                                <p class="ml-3"><i class="fa fa-soundcloud"></i></p>
+                                <p class="ml-5 mr-3">SoundCloud</p>
+                            </div>
+                            <hr>
+                            <div class="flex p-2 hover:bg-twitch hover:text-white">
+                                <p class="ml-3"><i class="fa fa-twitch"></i></p>
+                                <p class="ml-5 mr-3">Twitch</p>
+                            </div>
+                            <hr>
+                            <div class="flex p-2 hover:bg-snapchat hover:text-white">
+                                <p class="ml-3"><i class="fa fa-snapchat"></i></p>
+                                <p class="ml-5 mr-3">Snapchat</p>
+                            </div>
+                        </div>
+                    </ul> 
+                </li>
+                <li class="mr-2 px-2 py-7 hover:text-text-colors opacity-0 md:opacity-100"><i class="fa fa-user-circle"></i></li>
+                <li class="mr-2 px-2 py-7 hover:text-hover opacity-0 md:opacity-100"><i class="fa fa-bars"></i></li>
+                <li class="mr-2 px-2 py-7 hover:text-hover opacity-0 md:opacity-100"><i class="fa fa-search"></i></li>
+                <li>
+                    <ul class="flex text-light-white text-sm ">
+                        <li><a href="https://www.facebook.com"><i class="fa fa-facebook h-6 w-6 text-white grid items-center justify-center border-0 rounded hover:bg-text-colors mr-px"></i></a></li>
+                        <li><a href="https://www.youtube.com"><i class="fa fa-youtube-play h-6 w-6 text-white grid items-center justify-center border-0 rounded hover:bg-youtube mr-px"></i></a></li>
+                        <li><a href="https://www.vimeo.com"><i class="fa fa-vimeo h-6 w-6 text-white grid items-center justify-center border-0 rounded hover:bg-vimeo mr-px"></i></a></li>
+                        <li><a href="https://www.soundcloud.com"><i class="fa fa-soundcloud h-6 w-6 text-white grid items-center justify-center border-0 rounded hover:bg-soundcloud mr-px"></i></a></li>
+                        <li><a href="https://www.spotify.com"><i class="fa fa-spotify h-6 w-6 text-white grid items-center justify-center border-0 rounded hover:bg-spotify mr-px"></i></a></li>
+                        <li><a href="https://www.twitch.com"><i class="fa fa-twitch h-6 w-6 text-white grid items-center justify-center border-0 rounded hover:bg-twitch mr-px"></i></a></li>
+                        <li><a href="https://www.snapchat.com"><i class="fa fa-snapchat h-6 w-6 text-white grid items-center justify-center border-0 rounded hover:bg-snapchat mr-px"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+</header>
+<!-- 
+    grid-cols-2 md:grid-cols-3
+    md:col-start-3 col-span-2 md:col-span-1
+    grid grid-cols-1 md:grid-cols-2
+    col-span-2 md:col-span-1
+ -->
+
+
+ <section class="bg-darker">
+    <div class="section electronic-section grid grid-cols-2 md:grid-cols-3 grid-rows-2">
+        <div class="bg-background border border-light-white m-8 mt-0 elect col-span-2 row-span-2">
+            <div><h2 class="sub-heading text-white text-xl ml-10 pt-5 pb-5">Electronics<span class="text-slant-color">/</span></h2></div>
+            <div class="px-8 electronic-sub-section grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="relative">
+                    <div class="cursor-pointer"><img src="images/gadget2.jpg" alt="computer gadget" class="w-max"></div>
+                    <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                    <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Electronics</p>
+                    <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                        <div class="flex base">
+                            <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Tony Stark</p>
+                            <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                        </div>
+                        <div class="flex base">
+                            <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                            <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;3,088</p>
+                        </div>
+                    </div>
+                    <h3 class="text-white text-2xl hover:text-hover cursor-pointer">Top 5 - Computer Gadget You Must Have</h3>
+                    <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                    <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                </div>
+                <div class="relative">
+                    <div class="cursor-pointer"><img src="images/amazon2.jpg" alt="amazon" class="w-max"></div>
+                    <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                    <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Electronics</p>
+                    <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                        <div class="flex base">
+                            <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Danny Rand</p>
+                            <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                        </div>
+                        <div class="flex base">
+                            <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                            <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;2,593</p>
+                        </div>
+                    </div>
+                    <h3 class="text-white text-2xl hover:text-hover cursor-pointer">10 Things Amazon Echo Can Do That Apple's Siri Can't</h3>
+                    <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                    <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                </div>
+                <div class="relative">
+                    <div class="cursor-pointer"><img src="images/google-home1.jpg" alt="Google home" class="w-max"></div>
+                    <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                    <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Electronics</p>
+                    <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                        <div class="flex base">
+                            <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Tony Stark</p>
+                            <p><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2016</p>
+                        </div>
+                        <div class="flex base">
+                            <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                            <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;1,009</p>
+                        </div>
+                    </div>
+                    <h3 class="text-white text-2xl hover:text-hover cursor-pointer">Google Home vs Amazon Echo - Which is Best?</h3>
+                    <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                    <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                </div>
+                <div class="relative">
+                    <div class="cursor-pointer"><img src="images/tim-cook2.jpg" alt="amazon" class="w-max"></div>
+                    <p><i class="fa fa-play border-2 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-16 right-40"></i></p>
+                    <p class="bg-text-colors text-xs border-0 w-20 text-white p-1 text-center rounded absolute top-40 right-5">Electronics</p>
+                    <div class="flex justify-between text-light-white text-sm pt-4 pb-4">
+                        <div class="flex base">
+                            <p class="mr-5"><i class="fa fa-user-circle"></i>&nbsp;Tony Stark</p>
+                            <p><i class="fa fa-clock-o"></i>&nbsp;Nov 6, 2016</p>
+                        </div>
+                        <div class="flex base">
+                            <p class="mr-5"><i class="fa fa-comments"></i>&nbsp;0</p>
+                            <p class="text-hot-color"><i class="fa fa-fire"></i>&nbsp;2,044</p>
+                        </div>
+                    </div>
+                    <h3 class="text-white text-2xl hover:text-hover cursor-pointer">Apple - September Event 2016</h3>
+                    <p class="text-white text-sm text-light-white leading-6">Stay focused and remember we design the best WordPress News and Magazine Themes. It's the ones closest to you that…</p>
+                    <button class="bg-text-colors text-xs border-0 w-28 text-white p-3 text-center rounded cursor-pointer">Read More>></button>
+                </div>
+            </div>
+            <hr class="mt-5">
+            <div class="grid items-center justify-center text-white hover:text-hover text-sm p-3 cursor-pointer font-bold">
+                <button>Show More</button>
+            </div>
+        </div>
+        <div class="popular-video bg-background border mr-8">
+            <div class="flex text-white p-5">
+                <p class="mr-4 mt-2 text-light-white"><i class="fa fa-file-text-o"></i></p>
+                <h2 class="font-bold">Popular Videos <span class="text-slant-color text-2xl">/</span></h2>
+            </div>
+            <div class="font-bold">
+                <div style="height: 100px;" class="grid grid-cols-2 relative">
+                    <div class="flex relative">
+                        <div class="h-12 w-12 rounded-full bg-background flex items-center justify-center absolute z-10 top-1 left-6">
+                            <p class="bg-text-colors p-2 font-bold rounded-full h-10 w-10 flex items-center justify-center text-white">1</p>
+                        </div>
+                        <img src="images/gadget2.jpg" alt="computer gadget" width="120px" class="bottom-1 absolute right-2">
+                    </div>
+                    <div>
+                        <h3 class="text-white capitalize mt-3 text-sm">Top 5 Computer Gadget you must have</h3>
+                        <p class="text-base text-light-white base"><i class="fa fa-clock-o text-sm">Feb 6, 2017</i></p>
+                    </div>
+                    <p><i class="fa fa-play border-2 rounded-full h-10 w-10 flex items-center justify-center text-lg text-white absolute top-6 left-24"></i></p>
+                </div>
+                <div style="height: 100px;" class="grid grid-cols-2 relative">
+                    <div class="flex relative">
+                        <div class="h-12 w-12 rounded-full bg-background flex items-center justify-center absolute z-10 top-1 left-6">
+                            <p class="bg-text-colors p-2 font-bold rounded-full h-10 w-10 flex items-center justify-center text-white">2</p>
+                        </div>
+                        <img src="images/robot2.jpg" alt="robot" width="120px" class="bottom-1 absolute right-2">
+                    </div>
+                    <div>
+                        <h3 class="text-white capitalize mt-3 text-sm">Top 9 New Technology Future Inventions Gadgets Coming in 2017</h3>
+                        <p class="text-base text-light-white base"><i class="fa fa-clock-o text-sm">Feb 6, 2017</i></p>
+                    </div>
+                    <p><i class="fa fa-play border-2 rounded-full h-10 w-10 flex items-center justify-center text-lg text-white absolute top-6 left-24"></i></p>
+                </div>
+                <div style="height: 100px;" class="grid grid-cols-2 relative">
+                    <div class="flex relative">
+                        <div class="h-12 w-12 rounded-full bg-background flex items-center justify-center absolute z-10 top-1 left-6">
+                            <p class="bg-text-colors p-2 font-bold rounded-full h-10 w-10 flex items-center justify-center text-white">3</p>
+                        </div>
+                        <img src="images/amazon2.jpg" alt="amazon" width="120px" class="bottom-1 absolute right-2">
+                    </div>
+                    <div>
+                        <h3 class="text-white capitalize mt-3 text-sm">10 Things Amazon Echo Can Do That Apple's Siri Can't</h3>
+                        <p class="text-base text-light-white base"><i class="fa fa-clock-o text-sm">Feb 6, 2017</i></p>
+                    </div>
+                    <p><i class="fa fa-play border-2 rounded-full h-10 w-10 flex items-center justify-center text-lg text-white absolute top-6 left-24"></i></p>
+                </div>
+                <div style="height: 100px;" class="grid grid-cols-2 relative">
+                    <div class="flex relative">
+                        <div class="h-12 w-12 rounded-full bg-background flex items-center justify-center absolute top-1 left-6 z-10">
+                            <p class="bg-text-colors p-2 font-bold rounded-full h-10 w-10 flex items-center justify-center text-white">4</p>
+                        </div>
+                        <img src="images/tim-cook2.jpg" alt="tim cook" width="120px" class="bottom-1 absolute right-2">
+                    </div>
+                    <div>
+                        <h3 class="text-white capitalize mt-3 text-sm">Apple - September Event 2016</h3>
+                        <p class="text-base text-light-white base"><i class="fa fa-clock-o text-sm">Nov 6, 2016</i></p>
+                    </div>
+                    <p><i class="fa fa-play border-2 rounded-full h-10 w-10 flex items-center justify-center text-lg text-white absolute top-6 left-24"></i></p>
+                </div>
+                <div style="height: 100px;" class="grid grid-cols-2 relative">
+                    <div class="flex relative">
+                        <div class="h-12 w-12 rounded-full bg-background flex items-center justify-center absolute top-1 left-6 z-10">
+                            <p class="bg-text-colors p-2 font-bold rounded-full h-10 w-10 flex items-center justify-center text-white">5</p>
+                        </div>
+                        <img src="images/mobile2.jpg" alt="Samsung mobile phones" width="120px" class="bottom-1 absolute right-2">
+                    </div>
+                    <div>
+                        <h3 class="text-white capitalize mt-3 text-sm">Samsung Galaxy S8 and S8+: Official Introduction</h3>
+                        <p class="text-base text-light-white base"><i class="fa fa-clock-o text-sm">Mar 6, 2016</i></p>
+                    </div>
+                    <p><i class="fa fa-play border-2 rounded-full h-10 w-10 flex items-center justify-center text-lg text-white absolute top-6 left-24"></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="relative mt-14 iphone-img">
+            <img src="images/iphone.jpg" alt="iphone" title="Iphone 7 Trailer">
+            <div class="absolute top-40 left-5 cursor-pointer">
+                <p class="text-xs text-light-white sticky top-8"><i class="fa fa-clock-o"></i> Mar 4, 2017</p>
+                <p class="text-lg font-bold text-white sticky top-8">Iphone 7 Trailer 2016</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 
+  <ul class="flex flex-col items-stretch text-white md:uppercase lg:flex-row text-sm p-16">
+                    <li class="mr-2 lg:border-0 lg:bg-text-colors lg:px-2 lg:py-7 text-white"><a href="#">Home</a><hr class="border-light-white lg:border-black lg:border mt-2"></li>
+                    <li class="mr-2 md:border-0 md:hover:bg-text-colors md:px-1 lg:px-2 md:py-7  text-white"><a href="#">World</a> <i class="fa fa-caret-down icon"></i><hr class=" border-light-white md:hidden mt-2"></li>
+                    <li class="mr-2 md:border-0 md:hover:bg-text-colors md:px-2 lg:px-2 md:py-7 text-white"><a href="#">Technology</a> <i class="fa fa-caret-down icon"></i><hr class="border-light-white md:hidden mt-2"></li>
+                    <li class="mr-2 md:border-0 md:hover:bg-text-colors md:px-2 lg:px-2 md:py-7 text-white"><a href="#">Tips and Ideas</a> <i class="fa fa-caret-down icon"></i><hr class=" border-light-white md:hidden mt-2"></li>
+                    <li class="mr-2 md:border-0 md:hover:bg-text-colors md:px-2 lg:px-2 md:py-7 text-white"><a href="#">Healthy Foods</a> <i class="fa fa-caret-down icon"></i><hr class=" border-light-white md:hidden mt-2"></li>
+                    <li class="mr-2 px-2 py-7 hover:text-text-colors capitalize font-light relative inline-block opacity-0 md:opacity-100" id="follow"><i class="fa fa-plus"></i>&nbsp;Follow
+                        <ul class="sm-links">
+                            <div class="border divide-border-test min-w-max absolute text-light-white text-sm cursor-pointer bg-background" id="sm-links">
+                                <div class="flex p-2 hover:bg-text-colors hover:text-white">
+                                    <p class="ml-3"><i class="fa fa-facebook"></i></p>
+                                    <p class="ml-5 mr-3">Facebook</p>
+                                </div>
+                                <hr>
+                                <div class="flex p-2 hover:bg-you-tube hover:text-white">
+                                    <p class="ml-3"><i class="fa fa-youtube-play"></i></p>
+                                    <p class="ml-5 mr-3">Youtube</p>
+                                </div>
+                                <hr>
+                                <div class="flex p-2 hover:bg-vimeo hover:text-white">
+                                    <p class="ml-3"><i class="fa fa-vimeo"></i></p>
+                                    <p class="ml-5 mr-3">Vimeo</p>
+                                </div>
+                                <hr>
+                                <div class="flex p-2 hover:bg-soundcloud hover:text-white">
+                                    <p class="ml-3"><i class="fa fa-soundcloud"></i></p>
+                                    <p class="ml-5 mr-3">SoundCloud</p>
+                                </div>
+                                <hr>
+                                <div class="flex p-2 hover:bg-twitch hover:text-white">
+                                    <p class="ml-3"><i class="fa fa-twitch"></i></p>
+                                    <p class="ml-5 mr-3">Twitch</p>
+                                </div>
+                                <hr>
+                                <div class="flex p-2 hover:bg-snapchat hover:text-white">
+                                    <p class="ml-3"><i class="fa fa-snapchat"></i></p>
+                                    <p class="ml-5 mr-3">Snapchat</p>
+                                </div>
+                            </div>
+                        </ul> 
+                    </li>
+                    <li class="mr-2 px-2 py-7 hover:text-text-colors opacity-0 md:opacity-100"><i class="fa fa-user-circle"></i></li>
+                    <li class="mr-2 px-2 py-7 hover:text-hover opacity-0 md:opacity-100"><i class="fa fa-bars"></i></li>
+                    <li class="mr-2 px-2 py-7 hover:text-hover opacity-0 md:opacity-100"><i class="fa fa-search"></i></li>
+                    <li>
+                        <ul class="flex text-light-white text-sm md:hidden">
+                            <li><a href="https://www.facebook.com"><i class="fa fa-facebook h-6 w-6 text-white grid items-center justify-center border-0 rounded hover:bg-text-colors mr-px"></i></a></li>
+                            <li><a href="https://www.youtube.com"><i class="fa fa-youtube-play h-6 w-6 text-white grid items-center justify-center border-0 rounded hover:bg-youtube mr-px"></i></a></li>
+                            <li><a href="https://www.vimeo.com"><i class="fa fa-vimeo h-6 w-6 text-white grid items-center justify-center border-0 rounded hover:bg-vimeo mr-px"></i></a></li>
+                            <li><a href="https://www.soundcloud.com"><i class="fa fa-soundcloud h-6 w-6 text-white grid items-center justify-center border-0 rounded hover:bg-soundcloud mr-px"></i></a></li>
+                            <li><a href="https://www.spotify.com"><i class="fa fa-spotify h-6 w-6 text-white grid items-center justify-center border-0 rounded hover:bg-spotify mr-px"></i></a></li>
+                            <li><a href="https://www.twitch.com"><i class="fa fa-twitch h-6 w-6 text-white grid items-center justify-center border-0 rounded hover:bg-twitch mr-px"></i></a></li>
+                            <li><a href="https://www.snapchat.com"><i class="fa fa-snapchat h-6 w-6 text-white grid items-center justify-center border-0 rounded hover:bg-snapchat mr-px"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+ -->
+</body>
+</html>

@@ -1,25 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.btn{
-    @apply font-bold py-2 px-4 rounded;
-}
-.btn-blue{
-    @apply bg-green-500 text-white text-xl;
-}
-.btn-blue:hover{
-    @apply bg-blue-200;
-}
-.navs:hover{
-    @apply border bg-hover px-3 py-7 rounded;
-    border: solid #ffffff1a;
-    background-color: #0000000d;
-}
-@layer utilities{
-    li.follow:hover + .sm-links{
-        visibility: visible;
-     }    
-}
 .base{
     font-size: 0.75rem;
     line-height: 1rem;
@@ -54,7 +35,7 @@
       height: 91px;
   }
   .sub-navigation{
-      height: 35px;
+      height: 38px;
   }
   .section{
       grid-template-rows: repeat(2, 570px);
@@ -65,3 +46,124 @@
   #follow:hover #sm-links{
       display: block;
   }
+  input[type="checkbox"]{
+    display: none;
+  }
+  nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer; 
+  }
+  
+  /* .electronic-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: span 2;
+  }
+  .elect{
+    grid-column: span 2;
+  }
+  .electronic-sub-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .iphone-img{
+    grid-column-start: 3;
+  } */
+  @media (min-width:1024px) {
+      body{
+        background-image: url('/public/images/background-img.jpg');
+      }
+  }
+  @media (min-width:1201px){
+      .icon{
+        visibility: visible;
+      }
+  }
+  @media (max-width:1200px) {
+    .icon{
+      visibility: hidden;
+    }
+  }
+  @media (max-width:1000px) {
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+      z-index: 1000;
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      font-weight: 100;
+      font-size: 25px;
+    }
+    /* .menu-btn i:hover:before{
+      color: #9b2622;
+    } */
+    nav ul{
+      position: fixed;
+      top: 0;
+      right: -100%;
+      background: #08f;
+      height: 100vh;
+      width: 100%;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+      right: 0;
+    }
+    nav ul li{
+      width: 100%;
+      margin: 10px 0;
+    }
+    nav ul li{
+      width: 100%;
+      margin-right: -100%;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    nav ul li a{
+      font-weight: normal;
+      font-size: 20px;
+    }
+    #click:checked ~ ul li{
+      margin-right: 0px;
+      display: block;
+    }
+    .elements{
+      visibility: visible;
+    }
+    .input::placeholder{
+      font-size: 16px;
+      padding: 5px;
+    }
+    .input{
+      border-radius: 15px;
+    }
+    #follow{
+      visibility: hidden;
+    }
+    .icons{
+      visibility: hidden;
+    }
+    .play{
+      display: none;
+    }
+    .links{
+      display: none;
+    }
+    .news{
+      display: none;
+    }
+    .bolt{
+      display: block;
+    }
+    .ctas{
+      display: none;
+    }
+  }
+  @media (max-width:768px) {
+      .news-section{
+        grid-template-columns: 1fr;
+      }
+
+  }
+  
