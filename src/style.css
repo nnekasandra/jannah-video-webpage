@@ -179,6 +179,9 @@
       .technology{
         grid-template-columns: 1fr;
       }
+      .list{
+        display: none;
+      }
 
   }
   
