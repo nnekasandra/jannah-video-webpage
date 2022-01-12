@@ -30,7 +30,9 @@ module.exports = {
         'youtube-hover': '#9b2622',
         'facebook': '#3b5998',
         'border-test': '#aca6a6',
-        'footer': '#161619'
+        'footer': '#161619',
+        'dark-white': '#ffffff1a',
+        'dark-background': '#0000001a'
       },
       screens: {
         'xl': '1200px',

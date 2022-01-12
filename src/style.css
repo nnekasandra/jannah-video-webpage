@@ -1,9 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 .base{
     font-size: 0.75rem;
     line-height: 1rem;
+}
+body{
+  font-family: 'Cairo', sans-serif;
 }
 .image-grid{
     display: grid;
@@ -15,67 +20,67 @@
     height: 10px;
   }
   /* Track */
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     border-radius: 100vh;
     background:#1a1b1f;
   }
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
       display: none;
   }
-  .scroll-function{
+.scroll-function{
       height: 430px;
       scrollbar-width: 10px;
       scrollbar-color: #1a1b1f;
   }
-  img{
+img{
       max-width: 100%;
   }
-  header{
+header{
       height: 91px;
   }
-  .sub-navigation{
+.sub-navigation{
       height: 38px;
+      font-size: 13px;
   }
-  .section{
+.section{
       grid-template-rows: repeat(2, 570px);
   }
-  #sm-links{
+#sm-links{
       display: none;
+      margin-top: 45px;
   }
-  #follow:hover #sm-links{
+#follow:hover #sm-links{
       display: block;
   }
-  input[type="checkbox"]{
+input[type="checkbox"]{
     display: none;
   }
-  nav .menu-btn i{
+nav .menu-btn i{
     color: #fff;
     font-size: 22px;
     cursor: pointer; 
   }
-  
-  /* .electronic-section{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row: span 2;
+.ticker{
+    height: 21px;
+    width: 21px;
   }
-  .elect{
-    grid-column: span 2;
+.ticker:hover{
+    transition: .3s;
   }
-  .electronic-sub-section{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.caption{
+    display: none;
   }
-  .iphone-img{
-    grid-column-start: 3;
-  } */
+.popular-img{
+    width: 110px;
+    height: 75px;
+  }
   @media (min-width:1024px) {
       body{
         background-image: url('/public/images/background-img.jpg');
       }
-      .popular-img{
-        width: 100px;
+      .img{
+        height: 255px;
       }
   }
   @media (min-width:1201px){
@@ -84,6 +89,13 @@
       }
       .twitter{
         visibility: visible;
+      }
+      .news-section{
+        height: 327px;
+      }
+      .caption-container:hover .caption{
+        display: block;
+        transition: .2s;
       }
   }
   @media (max-width:1200px) {
@@ -101,9 +113,6 @@
       font-weight: 100;
       font-size: 25px;
     }
-    /* .menu-btn i:hover:before{
-      color: #9b2622;
-    } */
     nav ul{
       position: fixed;
       top: 0;
