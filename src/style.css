@@ -87,6 +87,20 @@ nav .menu-btn i{
   .hover-btn:hover{
     transition: all .3s;
   }
+  .sm-icon{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    padding: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .test{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 150px));
+  }
   @media (min-width:1024px) {
       body{
         background-image: url('/public/images/background-img.jpg');
@@ -134,7 +148,7 @@ nav .menu-btn i{
       width: 100%;
       display: block;
       transition: all 0.3s ease;
-      z-index: 1000;
+      z-index: 100;
     }
     #click:checked ~ ul{
       right: 0;
@@ -190,15 +204,9 @@ nav .menu-btn i{
     .height{
       height: 100px;
     }
-    /* .tips-section{
-      grid-template-columns: repeat(3, minmax(min-content, 1fr));
-    } */
   }
   @media (max-width:768px) {
       .news-section{
-        grid-template-columns: 1fr;
-      }
-      .tips-section{
         grid-template-columns: 1fr;
       }
       .info{

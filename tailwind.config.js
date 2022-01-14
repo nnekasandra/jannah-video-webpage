@@ -27,6 +27,7 @@ module.exports = {
         'instagram': '#C13584',
         'instagram-hover': '#E1306C',
         'youtube': '#c4302b',
+        'youtube-subscribe': '#e62117',
         'youtube-hover': '#9b2622',
         'facebook': '#3b5998',
         'border-test': '#aca6a6',
