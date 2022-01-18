@@ -7,8 +7,44 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+<style>
+    button{
+        height: 30px;
+        width: 30px;
+        background-color: #08f;
+        padding: 2px;
+        text-align: center;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 25px auto;
+        transition: box-shadow 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    button:hover{
+        
+    }
+    button::before{
+        /* content: "";
+        display: block;
+        height: 20px;
+        width: 20px;
+        background-color: rgb(24, 26, 27);
+        padding: 2px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transform: scale(0); */
+    }
+    button:hover::before{
+        opacity: 1;
+        transform: scale(1);
+        transition: all.3s;
+    }
+</style>
 <body>
-    <header>
+    <!-- <header>
         <div class="p-4 md:p-6">
             <img src="images/videeo.png" alt="logo">
         </div>
@@ -65,6 +101,7 @@
             </label>
         
         </nav>
-    </header>
+    </header> -->
+    <button>333</button>
 </body>
 </html>

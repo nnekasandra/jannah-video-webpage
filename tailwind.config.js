@@ -33,7 +33,8 @@ module.exports = {
         'border-test': '#aca6a6',
         'footer': '#161619',
         'dark-white': '#ffffff1a',
-        'dark-background': '#0000001a'
+        'dark-background': '#0000001a',
+        'dim-white': '#ffffff33'
       },
       screens: {
         'xl': '1200px',
