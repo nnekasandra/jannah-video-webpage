@@ -13,28 +13,98 @@
       display: grid;
       grid-template-columns: repeat(3, minmax(min-content, 400px));
   }
-  .serif{
-    font-family: 'Cairo', serif;
+  .layout{
+    display: grid;
+    grid-template-columns:  repeat(5, minmax(min-content, 300px));;
+    visibility: hidden;
+    width: 90%;
+    left: 6%;
+    transition: visibility .1s ease-in;
+  }
+  .layout div:nth-child(1){
+    transition-delay: 0s;
+  }
+  .layout div:nth-child(2){
+    transition-delay: 0.02s;
+  }
+  .layout div:nth-child(3){
+    transition-delay: 0.04s;
+  }
+  .layout div:nth-child(4){
+    transition-delay: 0.06s;
+  }
+  .layout div:nth-child(5){
+    transition-delay: 0.08s;
+  }
+  .world:hover .layout{
+    visibility: visible;
+  }
+  .tips:hover .layout{
+    visibility: visible;
+  }
+  .healthy-foods:hover .layout{
+    visibility: visible;
+  }
+  .hover-img{
+    height: 150px;
+    width: 250px;
+  }
+  .layouts{
+    display: grid;
+    grid-template-columns:  repeat(4, minmax(min-content, 400px));; 
+  }
+  .div{
+    width: 30%;
+    float: left;
+  }
+  .tech-news{
+    width: 90%;
+    left: 6%;
+    transition: visibility .1s ease-in;
+    visibility: hidden;
+  }
+  .technology-news:hover .tech-news{
+    visibility: visible;
+  }
+  .tech-news .video-grid .all:nth-child(1){
+    transition-delay: 0s;
+  }
+  .tech-news .video-grid .all:nth-child(2){
+    transition-delay: 0.03s;
+  }
+  .tech-news .video-grid .all:nth-child(3){
+    transition-delay: 0.06s;
+  }
+  .tech-news .video-grid .all:nth-child(4){
+    transition-delay: 0.09s;
+  }
+  .computing{
+    display: none;
+  }
+  .mobile{
+    display: none;
+  }
+  .electronics{
+    display: none;
   }
   /* width */
-  ::-webkit-scrollbar {
-      width: 10px;
-      height: 10px;
-    }
+  .scrollbar::-webkit-scrollbar {
+      width: 6px;
+  }
     /* Track */
-  ::-webkit-scrollbar-track {
-      border-radius: 100vh;
-      background:#1a1b1f;
-    }
+  .scrollbar::-webkit-scrollbar-track {
+      border-radius: 8px;
+      background:#000;
+  }
     /* Handle */
-  ::-webkit-scrollbar-thumb {
+    .scrollbar::-webkit-scrollbar-thumb {
         display: none;
-    }
+  }
   .scroll-function{
         height: 430px;
-        scrollbar-width: 10px;
-        scrollbar-color: #1a1b1f #0000000d;
-    }
+        scrollbar-width: 6px;
+        scrollbar-color: #000;
+  }
   #top{
     display: none;
     position: fixed;
@@ -46,50 +116,51 @@
   }
   img{
         max-width: 100%;
-    }
+  }
   header{
         height: 91px;
-    }
+  }
   .sub-navigation{
         height: 38px;
         font-size: 13px;
-    }
+  }
   .section{
         grid-template-rows: repeat(2, 570px);
-    }
+  }
   #sm-links{
         display: none;
         margin-top: 45px;
-    }
+  }
   #follow:hover #sm-links{
         display: block;
-    }
+  }
   input[type="checkbox"]{
       display: none;
-    }
+  }
   nav .menu-btn i{
       color: #fff;
       font-size: 22px;
       cursor: pointer; 
-    }
+  }
   .ticker{
       height: 21px;
       width: 21px;
-    }
+  }
   .ticker:hover{
       transition: .3s;
-    }
+  }
   .caption{
       display: none;
-    }
+      transition: all 1s;
+  }
   .popular-img{
       width: 110px;
       height: 75px;
-    }
-    .hover-btn:hover{
+  }
+  .hover-btn:hover{
       transition: all .3s;
-    }
-    .sm-icon{
+  }
+  .sm-icon{
       height: 35px;
       width: 35px;
       border-radius: 50%;
@@ -97,26 +168,26 @@
       display: grid;
       align-items: center;
       justify-content: center;
-    }
-    .test{
+  }
+  .test{
       display: grid;
       grid-template-columns: repeat(2, minmax(min-content, 150px));
-    }
-    .videos div{
-      height: 75px;
-    }
-    .videos div:hover{
+  }
+  .videos div{
+      height: 90px;
+  }
+  .videos div:hover{
       transition: .3s;
-    }
-    .title{
+  }
+  .title{
       font-size: 14px;
       line-height: 1.4;
-    }
-    .image-hover:hover{
+  }
+  .image-hover:hover{
       opacity: 0.5;
       transition: .3s;
-    }
-    .categories button{
+  }
+  .categories button{
       background-color: #00adef;
       text-align: center;
       font-size: 85%;
@@ -127,8 +198,8 @@
       color: #fff;
       border-radius: 2px;
       position: relative;
-    }
-    .categories button::before{
+  }
+  .categories button::before{
       content: "";
       position: absolute;
       background-color: #08f;
@@ -140,21 +211,21 @@
       left: 0;
       opacity: 0;
       transform: scale(0);
-    }
-    .categories p:hover + .btn::before{
+  }
+  .categories p:hover + .btn::before{
       opacity: 1;
       transform: scale(1);
       transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-    @media (min-width:1024px) {
+  }
+  @media (min-width:1024px) {
         body{
           background-image: url('/public/images/background-img.jpg');
         }
         .img{
           height: 255px;
         }
-    }
-    @media (min-width:1201px){
+  }
+  @media (min-width:1201px){
         .icon{
           visibility: visible;
         }
@@ -163,18 +234,17 @@
         }
         .caption-container:hover .caption{
           display: block;
-          transition: 2s;
         }
         .play{
           display: block;
         }
-    }
-    @media (max-width:1200px) {
+  }
+  @media (max-width:1200px) {
       .icon{
         visibility: hidden;
       }
-    }
-    @media (max-width:1000px) {
+  }
+  @media (max-width:1000px) {
       #click:checked ~ .menu-btn i:before{
         content: "\f00d";
         z-index: 1000;
@@ -249,8 +319,14 @@
       .height{
         height: 100px;
       }
-    }
-    @media (max-width:768px) {
+      .layout{
+        visibility: hidden;
+      }
+      .tech-news{
+        visibility: hidden;
+      }
+  }
+  @media (max-width:768px) {
         .news-section{
           grid-template-columns: 1fr;
         }
@@ -266,16 +342,16 @@
         .twitter{
           visibility: hidden;
         }
-    }
-    @media (min-width:769px){
+  }
+  @media (min-width:769px){
       .twitter{
         visibility: visible;
       }
-    }
-    @media (max-width:650px){
+  }
+  @media (max-width:650px){
       .twitter-news{
         width: 200px;
         overflow: hidden;
       }
-    }
+  }
     

@@ -42,66 +42,132 @@
         transform: scale(1);
         transition: all.3s;
     }
+    p{
+        width: 300px;
+        color: aliceblue;
+        border: 1px solid rgb(255, 255, 255);
+        height: 10px;
+        margin: 60px auto;
+    }
+    body{
+        background-image: url(/public/images/bg-dots.png);
+    }
 </style>
 <body>
-    <!-- <header>
-        <div class="p-4 md:p-6">
-            <img src="images/videeo.png" alt="logo">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor enim modi, eveniet accusamus, odio repellendus, minima nam possimus at tempora tempore ut quos aspernatur est qui a veritatis rem ducimus.</p>
+    <div class="bg-darker border-t-4 border-text-colors mt-12 text-white mr-8 flex gap-5 fixed capitalize font-light layout">
+        <div class="bg-light text-white pl-6 pt-8 pb-10 div">
+            <li class="list-none hover:text-hover cursor-pointer text-sm hover:bg-darker py-3 pl-2 link">All</li>
+            <li class="list-none hover:text-hover cursor-pointer text-sm hover:bg-darker py-3 pl-2">Computing</li>
+            <li class="list-none hover:text-hover cursor-pointer text-sm hover:bg-darker py-3 pl-2">Electronics</li>
+            <li class="list-none hover:text-hover cursor-pointer text-sm hover:bg-darker py-3 pl-2">Mobile</li>
         </div>
-        <nav>
-            <ul>
-                <li class="mr-2 md:border-0 md:bg-text-colors md:px-1 lg:px-2 md:py-7 text-white">Home <hr class=" border-light-white md:border-black md:border mt-2"></li>
-                <li class="mr-2 md:border-0 md:hover:bg-text-colors md:px-1 lg:px-2 md:py-7  text-white">World <i class="fa fa-caret-down opacity-0 lg:opacity-100"></i> <hr class=" border-light-white md:hidden mt-2"></li>
-                <li class="mr-2 md:border-0 md:hover:bg-text-colors md:px-2 lg:px-2 md:py-7 text-white">Technology <i class="fa fa-caret-down opacity-0 lg:opacity-100"></i><hr class=" border-light-white md:hidden mt-2"></li>
-                <li class="mr-2 md:border-0 md:hover:bg-text-colors md:px-2 lg:px-2 md:py-7 text-white">Tips and Ideas <i class="fa fa-caret-down icons opacity-0 lg:opacity-100"></i><hr class=" border-light-white md:hidden mt-2"></li>
-                <li class="mr-2 md:border-0 md:hover:bg-text-colors md:px-2 lg:px-2 md:py-7 text-white">Healthy Foods <i class="fa fa-caret-down icons opacity-0 lg:opacity-100"></i><hr class=" border-light-white md:hidden mt-2"></li>
-                <li class="mr-2 px-2 py-7 hover:text-text-colors capitalize font-light relative inline-block opacity-0 md:opacity-100" id="follow"><i class="fa fa-plus"></i>&nbsp;Follow
-                    <ul class="sm-links">
-                        <div class="border divide-border-test min-w-max absolute text-light-white text-sm cursor-pointer bg-background" id="sm-links">
-                            <div class="flex p-2 hover:bg-text-colors hover:text-white">
-                                <p class="ml-3"><i class="fa fa-facebook"></i></p>
-                                <p class="ml-5 mr-3">Facebook</p>
-                            </div>
-                            <hr>
-                            <div class="flex p-2 hover:bg-you-tube hover:text-white">
-                                <p class="ml-3"><i class="fa fa-youtube-play"></i></p>
-                                <p class="ml-5 mr-3">Youtube</p>
-                            </div>
-                            <hr>
-                            <div class="flex p-2 hover:bg-vimeo hover:text-white">
-                                <p class="ml-3"><i class="fa fa-vimeo"></i></p>
-                                <p class="ml-5 mr-3">Vimeo</p>
-                            </div>
-                            <hr>
-                            <div class="flex p-2 hover:bg-soundcloud hover:text-white">
-                                <p class="ml-3"><i class="fa fa-soundcloud"></i></p>
-                                <p class="ml-5 mr-3">SoundCloud</p>
-                            </div>
-                            <hr>
-                            <div class="flex p-2 hover:bg-twitch hover:text-white">
-                                <p class="ml-3"><i class="fa fa-twitch"></i></p>
-                                <p class="ml-5 mr-3">Twitch</p>
-                            </div>
-                            <hr>
-                            <div class="flex p-2 hover:bg-snapchat hover:text-white">
-                                <p class="ml-3"><i class="fa fa-snapchat"></i></p>
-                                <p class="ml-5 mr-3">Snapchat</p>
-                            </div>
-                        </div>
-                    </ul> 
-                </li>
-                <li class="mr-2 px-2 py-7 hover:text-text-colors opacity-0 md:opacity-100"><i class="fa fa-user-circle"></i></li>
-                <li class="mr-2 px-2 py-7 hover:text-hover opacity-0 md:opacity-100"><i class="fa fa-bars"></i></li>
-                <li class="mr-2 px-2 py-7 hover:text-hover opacity-0 md:opacity-100"><i class="fa fa-search"></i></li>
-                <li>
-            </ul>
-            <input type="checkbox" id="click">
-            <label for="click" class="menu-btn">
-            <i class="fa fa-th"></i>
-            </label>
-        
-        </nav>
-    </header> -->
-    <button>333</button>
+        <div class="video-grid">
+            <div class="layouts p-8 pb-10 gap-5 all">
+                <div class="relative">
+                    <img src="images/gadget2.jpg" alt="computer gadget" class="w-full cursor-pointer hover:opacity-70 hover-img">
+                    <p class="hover:text-text-colors cursor-pointer text-sm my-3">Top 5 - Computer Gadgets You Must Have</p>
+                    <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                    <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+                </div>
+                <div class="relative">
+                    <img src="images/fake-iphone1.jpg" alt="a man holding two iphones" class="w-full cursor-pointer hover:opacity-70 hover-img">
+                    <p class="hover:text-text-colors cursor-pointer text-sm my-3">How To Spot A Fake iPhone</p>
+                    <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                    <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+                </div>
+                <div class="relative">
+                    <img src="images/amazon1.jpg" alt="amazon echo" class="w-full cursor-pointer hover:opacity-70 hover-img">
+                    <p class="hover:text-text-colors cursor-pointer text-sm my-3">10 Things Amazon Echo Can Do That Apple's Siri Can't</p>
+                    <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                    <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+                </div>
+                <div class="relative">
+                    <img src="images/robot1.jpg" alt="a robot" class="w-full cursor-pointer hover:opacity-70 hover-img">
+                    <p class="hover:text-text-colors cursor-pointer text-sm my-3">Top 9 New Technology Future Inventions Gadgets Coming in 2017</p>
+                    <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                    <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+                </div>
+            </div>
+            <div class="computing layouts p-8 pb-10 gap-5">
+                <div class="relative">
+                    <img src="images/robot1.jpg" alt="a robot" class="w-full cursor-pointer hover:opacity-70 hover-img">
+                    <p class="hover:text-text-colors cursor-pointer text-sm my-3">Top 9 New Technology Future Inventions Gadgets Coming in 2017</p>
+                    <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                    <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+                </div>
+                <div class="relative">
+                    <img src="images/macbook.jpg" alt="macbook" class="w-full cursor-pointer hover:opacity-70 hover-img">
+                    <p class="hover:text-text-colors cursor-pointer text-sm my-3">Cheap Tablet Hybrid - Great Tech Deals</p>
+                    <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;May 6, 2015</p>
+                    <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+                </div>
+                <div class="relative">
+                    <img src="images/macbook.jpg" alt="macbook" class="w-full cursor-pointer hover:opacity-70 hover-img">
+                    <p class="hover:text-text-colors cursor-pointer text-sm my-3">Apple MacBook Pro 15″ Touch Bar Unboxing & Review</p>
+                    <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;April 6, 2015</p>
+                    <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+                </div>
+                <div class="relative">
+                    <img src="images/macbook.jpg" alt="macbook" class="w-full cursor-pointer hover:opacity-70 hover-img">
+                    <p class="hover:text-text-colors cursor-pointer text-sm my-3">13″ MacBook Pro 2016 Unboxing! What's New</p>
+                    <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2015</p>
+                    <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+                </div>
+            </div>
+            <div class="electronics layouts p-8 pb-10 gap-5">
+                <div class="relative">
+                    <img src="images/gadget2.jpg" alt="computer gadget" class="w-full cursor-pointer hover:opacity-70 hover-img">
+                    <p class="hover:text-text-colors cursor-pointer text-sm my-3">Top 5 - Computer Gadgets You Must Have</p>
+                    <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                    <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+                </div>
+                <div class="relative">
+                    <img src="images/amazon1.jpg" alt="amazon echo" class="w-full cursor-pointer hover:opacity-70 hover-img">
+                    <p class="hover:text-text-colors cursor-pointer text-sm my-3">10 Things Amazon Echo Can Do That Apple's Siri Can't</p>
+                    <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                    <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+                </div>
+                <div class="relative">
+                    <img src="images/google-home1.jpg" alt="google home" class="w-full cursor-pointer hover:opacity-70 hover-img">
+                    <p class="hover:text-text-colors cursor-pointer text-sm my-3">Google Home vs Amazon Echo - Which is Best?</p>
+                    <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;Jan 6, 2017</p>
+                    <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+                </div>
+                <div class="relative">
+                    <img src="images/tim-cook1.jpg" alt="google home" class="w-full cursor-pointer hover:opacity-70 hover-img">
+                    <p class="hover:text-text-colors cursor-pointer text-sm my-3">Apple - September Event 2016</p>
+                    <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;Nov 5, 2017</p>
+                    <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+                </div>
+            </div>
+            <div class="mobile layouts p-8 pb-10 gap-5">
+                <div class="relative">
+                    <img src="images/fake-iphone1.jpg" alt="a man holding two iphones" class="w-full cursor-pointer hover:opacity-70 hover-img">
+                    <p class="hover:text-text-colors cursor-pointer text-sm my-3">How To Spot A Fake iPhone</p>
+                    <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+                    <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+                </div>
+                <div class="relative">
+                    <img src="images/drone.jpg" alt="a man holding two iphones" class="w-full cursor-pointer hover:opacity-70 hover-img">
+                    <p class="hover:text-text-colors cursor-pointer text-sm my-3">World's Smallest Video Drone!</p>
+                    <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;May 6, 2016</p>
+                    <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+                </div>
+                <div class="relative">
+                    <img src="images/think.jpg" alt="a man thinking" class="w-full cursor-pointer hover:opacity-70 hover-img">
+                    <p class="hover:text-text-colors cursor-pointer text-sm my-3">Healthy & Quick Breakfast Ideas!</p>
+                    <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;April 6, 2016</p>
+                    <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+                </div>
+                <div class="relative">
+                    <img src="images/mobile1.jpg" alt="Samsung mobile phones" class="w-full cursor-pointer hover:opacity-70 hover-img">
+                    <p class="hover:text-text-colors cursor-pointer text-sm my-3">Samsung Galaxy S8 and S8+: Official Introduction</p>
+                    <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;Mar 6, 2016</p>
+                    <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
