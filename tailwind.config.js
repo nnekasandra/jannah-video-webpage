@@ -34,7 +34,8 @@ module.exports = {
         'footer': '#161619',
         'dark-white': '#ffffff1a',
         'dark-background': '#0000001a',
-        'dim-white': '#ffffff33'
+        'dim-white': '#ffffff33',
+        'sub-navigation-color': '#333'
       },
       screens: {
         'xl': '1200px',
@@ -48,7 +49,7 @@ module.exports = {
       padding: '2rem'
     },
     image:{
-      url: "public/images/bg-dots.png"
+      url: "public/images/dots-pattern.jpg"
     }
   },
   variants: {
