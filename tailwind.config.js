@@ -35,11 +35,12 @@ module.exports = {
         'dark-white': '#ffffff1a',
         'dark-background': '#0000001a',
         'dim-white': '#ffffff33',
-        'sub-navigation-color': '#333'
+        'sub-navigation-color': '#333',
+        'overall-background': '#27292d'
       },
       screens: {
         'xl': '1200px',
-        'lg': '1000px',
+        'lg': '1100px',
         'md': '768px'
         // => @media (min-width: 1200px) { ... }
       },

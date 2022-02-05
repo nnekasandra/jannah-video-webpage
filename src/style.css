@@ -19,24 +19,24 @@
     visibility: hidden;
     width: 90%;
     left: 6%;
-    transition: visibility .1s ease-in;
+    /* transition: visibility .1s ease-in; */
   }
-  .layout div:nth-child(1){
-    transition-delay: 0s;
+  /* .layout div:nth-child(1){
+    transition-duration: 0.2s;
   }
   .layout div:nth-child(2){
-    transition-delay: 0.02s;
+    transition-duration: 0.4s;
   }
   .layout div:nth-child(3){
-    transition-delay: 0.04s;
+    transition-duration: 0.6s;
   }
   .layout div:nth-child(4){
-    transition-delay: 0.06s;
+    transition-duration: 0.8s;
   }
   .layout div:nth-child(5){
-    transition-delay: 0.08s;
-  }
-  .world:hover .layout{
+    transition-duration: 1s;
+  } */
+  /* .world:hover .layout{
     visibility: visible;
   }
   .tips:hover .layout{
@@ -44,7 +44,7 @@
   }
   .healthy-foods:hover .layout{
     visibility: visible;
-  }
+  } */
   .hover-img{
     height: 150px;
     width: 250px;
@@ -60,7 +60,7 @@
   .tech-news{
     width: 90%;
     left: 6%;
-    transition: visibility .1s ease-in;
+    transition: visibility .3s ease-in;
     visibility: hidden;
   }
   .technology-news:hover .tech-news{
@@ -87,6 +87,21 @@
   .electronics{
     display: none;
   }
+  .testing{
+    width: 100%;
+  }
+  .position{
+    right: 10%;
+    top: 75%;
+  }
+  .play-btn{
+    top: 35%;
+    left: 45%;
+  }
+  .playBtn{
+    top: 50%;
+    left: 50%;
+  }
   /* width */
   .scrollbar::-webkit-scrollbar {
       width: 6px;
@@ -97,7 +112,7 @@
       background:#000;
   }
     /* Handle */
-    .scrollbar::-webkit-scrollbar-thumb {
+  .scrollbar::-webkit-scrollbar-thumb {
         display: none;
   }
   .scroll-function{
@@ -106,19 +121,22 @@
         scrollbar-color: #000;
   }
   #top{
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 5px;
-    z-index: 10;
-    font-size: 10px;
-    font-weight: normal;
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 5px;
+        z-index: 10;
+        font-size: 10px;
+        font-weight: normal;
   }
   img{
         max-width: 100%;
   }
   header{
         height: 91px;
+  }
+  .nav-items{
+        height: 93px;
   }
   .sub-navigation{
         height: 38px;
@@ -147,12 +165,9 @@
       width: 21px;
       transition: .3s;
   }
-  .ticker:hover{
-      
-  }
   .caption{
       display: none;
-      transition: all 1s;
+      transition: all 1s linear;
   }
   .popular-img{
       width: 110px;
@@ -172,7 +187,7 @@
   }
   .test{
       display: grid;
-      grid-template-columns: repeat(2, minmax(min-content, 150px));
+      grid-template-columns: repeat(1, 120px 1fr);
   }
   .videos div{
       height: 90px;
@@ -183,10 +198,6 @@
   .title{
       font-size: 14px;
       line-height: 1.4;
-  }
-  .image-hover:hover{
-      opacity: 0.5;
-      transition: .3s;
   }
   .categories button{
       background-color: #00adef;
@@ -245,7 +256,16 @@
         visibility: hidden;
       }
   }
-  @media (max-width:1000px) {
+  @media (min-width:1000px) {
+      .tech-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .alignment{
+        display: grid;
+      }
+  }
+  @media (max-width:1100px) {
       #click:checked ~ .menu-btn i:before{
         content: "\f00d";
         z-index: 1000;
@@ -320,11 +340,15 @@
       .height{
         height: 100px;
       }
-      .layout{
-        visibility: hidden;
+      .layout,
+      .tech-news{
+        display: none;
       }
       .tech-news{
         visibility: hidden;
+      }
+      .nav-items{
+        height: unset;
       }
   }
   @media (max-width:768px) {
@@ -342,6 +366,10 @@
         }
         .twitter{
           visibility: hidden;
+        }
+        .alignment{
+          display: flex;
+          gap: 3px;
         }
   }
   @media (min-width:769px){
