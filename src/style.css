@@ -367,10 +367,13 @@
         .twitter{
           visibility: hidden;
         }
-        .alignment{
+        .widen{
+          grid-column: span 2;
+        }
+        /* .alignment{
           display: flex;
           gap: 3px;
-        }
+        } */
   }
   @media (min-width:769px){
       .twitter{

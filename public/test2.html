@@ -175,6 +175,27 @@
         <div class="grid-item border bg-background pb-0  col-span-1 border-2 border-dim-white gap-20">
             col-span-2
     -->
-    ==>md md:flex md:gap-3
+    ==>md md:flex 
+    //follow grid-cols-2 md:grid-cols-1 md:flex lg:grid lg:grid-cols-2
+    md:grid-cols-2
+    col-span-2 lg:col-span-1
+    col-span-2 lg:col-span-1
+
+    grid grid-cols-2
+    absolute top-3 left-6 ml-5
+
+    <div class="flex height relative">
+        <div class="flex ml-5">
+            <div class="h-10 w-10 rounded-full bg-background flex items-center justify-center z-10">
+                <p class="bg-text-colors p-2 font-bold rounded-full h-8 w-8 flex items-center justify-center text-white">1</p>
+            </div>
+            <img src="images/gadget2.jpg" alt="computer gadget" class="">
+        </div>
+        <div class="mt-5 relative">
+            <h3 class="text-white capitalize text-sm font-bold title">Top 5 Computer Gadget you must have</h3>
+            <p class="text-base text-light-white base"><i class="fa fa-clock-o text-sm">Feb 6, 2017</i></p>
+            <p><i class="fa fa-play border-2 rounded-full h-10 w-10 flex items-center justify-center text-lg text-white absolute top-6 left-16"></i></p>
+        </div>
+    </div>
 </body>
 </html>
