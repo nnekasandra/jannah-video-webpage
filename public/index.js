@@ -12,7 +12,7 @@ function scrollToTop(){
     if (document.documentElement.scrollTop <= 0){
       window.clearInterval(interval);
     }else{
-      document.documentElement.scrollTop -= 50;
+      document.documentElement.scrollTop -= 150;
     }
   }
   let interval = window.setInterval(topFunction, 10);

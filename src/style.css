@@ -19,33 +19,50 @@
     visibility: hidden;
     width: 90%;
     left: 6%;
-    animation: animate 1s;
   }
-  @keyframes animate {
+  .world:hover .layout-child{
+    visibility: visible;
+    opacity: 0;
+    /* animation: image-animation 1s; */
+  }
+  .world:hover .layout{
+    visibility: visible;
+  }
+  /* @keyframes animate {
     0%{
       visibility: hidden;
     }
     100%{
       visibility: visible;
+      background-color: #00adef;
     }
-  }
-  /* .layout div:nth-child(1){
-    transition-duration: 0.2s;
-  }
-  .layout div:nth-child(2){
-    transition-duration: 0.4s;
-  }
-  .layout div:nth-child(3){
-    transition-duration: 0.6s;
-  }
-  .layout div:nth-child(4){
-    transition-duration: 0.8s;
-  }
-  .layout div:nth-child(5){
-    transition-duration: 1s;
   } */
-  .world:hover .layout{
-    visibility: visible;
+  
+  @keyframes image-animation {
+    0%{ transform: translateY(10px); opacity: 0;;}
+    100%{transform: translateY(0); opacity: 1;}
+    
+  } 
+  
+  .world:hover .layout-child:nth-child(1){
+    animation: image-animation 1s forwards;
+    animation-delay: 0s;
+  }
+  .world:hover .layout-child:nth-child(2){
+    animation: image-animation 1s forwards;
+    animation-delay: .2s;
+  }
+  .world:hover .layout-child:nth-child(3){
+    animation: image-animation 1s forwards;
+    animation-delay: .4s;
+  }
+  .world:hover .layout-child:nth-child(4){
+    animation: image-animation 1s forwards;
+    animation-delay: .6s;
+  }
+  .world:hover .layout-child:nth-child(5){
+    animation: image-animation 1s forwards;
+    animation-delay: .8s;
   }
   /* .world:hover .layout{
     visibility: visible;
@@ -181,7 +198,7 @@
       transition: all 1s linear;
   }
   .popular-img{
-      width: 130px;
+      width: 150px;
       height: 85px;
   }
   .hover-btn:hover{
@@ -209,6 +226,9 @@
   .title{
       font-size: 14px;
       line-height: 1.4;
+  }
+  .heading{
+      min-width: 200px;
   }
   .categories button{
       background-color: #00adef;
@@ -278,7 +298,7 @@
       .height{
         height: 100px;
         display: grid;
-        grid-template-columns: repeat(2, minmax(min-content, 400px));
+        grid-template-columns: repeat(2, 200px);
       }
   }
   @media (max-width:1100px) {
