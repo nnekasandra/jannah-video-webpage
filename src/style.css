@@ -18,68 +18,161 @@
     grid-template-columns:  repeat(5, minmax(min-content, 300px));;
     visibility: hidden;
     width: 90%;
+    /* top: 50px; */
+  }
+  .hover-effect{
     left: 6%;
   }
   .world:hover .layout-child{
     visibility: visible;
     opacity: 0;
-    /* animation: image-animation 1s; */
+  }
+  .healthy-foods:hover .layout-child{
+    visibility: visible;
+    opacity: 0;
+  }
+  .tips:hover .layout-child{
+    visibility: visible;
+    opacity: 0;
   }
   .world:hover .layout{
     visibility: visible;
   }
-  /* @keyframes animate {
-    0%{
-      visibility: hidden;
-    }
-    100%{
-      visibility: visible;
-      background-color: #00adef;
-    }
-  } */
-  
+  .number-div{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #1a1b1f;
+    z-index: 10;
+    position: relative;
+    /* margin-left: 10px; */
+    left: 10px;
+    top: 0;
+  }
+  .number-div p{
+    height: 35px;
+    width: 35px;
+    background-color: #00adef;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  .image-container{
+    
+  }
   @keyframes image-animation {
     0%{ transform: translateY(10px); opacity: 0;;}
-    100%{transform: translateY(0); opacity: 1;}
-    
-  } 
-  
+    100%{transform: translateY(0); opacity: 1;} 
+  }
   .world:hover .layout-child:nth-child(1){
-    animation: image-animation 1s forwards;
+    animation: image-animation .5s forwards;
     animation-delay: 0s;
   }
   .world:hover .layout-child:nth-child(2){
-    animation: image-animation 1s forwards;
-    animation-delay: .2s;
+    animation: image-animation .5s forwards;
+    animation-delay: .1s;
   }
   .world:hover .layout-child:nth-child(3){
-    animation: image-animation 1s forwards;
-    animation-delay: .4s;
+    animation: image-animation .5s forwards;
+    animation-delay: .2s;
   }
   .world:hover .layout-child:nth-child(4){
-    animation: image-animation 1s forwards;
-    animation-delay: .6s;
+    animation: image-animation .5s forwards;
+    animation-delay: .3s;
   }
   .world:hover .layout-child:nth-child(5){
-    animation: image-animation 1s forwards;
-    animation-delay: .8s;
+    animation: image-animation .5s forwards;
+    animation-delay: .4s;
   }
-  /* .world:hover .layout{
-    visibility: visible;
+  .tips:hover .layout-child:nth-child(1){
+    animation: image-animation .5s forwards;
+    animation-delay: 0s;
+  }
+  .tips:hover .layout-child:nth-child(2){
+    animation: image-animation .5s forwards;
+    animation-delay: .1s;
+  }
+  .tips:hover .layout-child:nth-child(3){
+    animation: image-animation .5s forwards;
+    animation-delay: .2s;
+  }
+  .tips:hover .layout-child:nth-child(4){
+    animation: image-animation .5s forwards;
+    animation-delay: .3s;
+  }
+  .tips:hover .layout-child:nth-child(5){
+    animation: image-animation .5s forwards;
+    animation-delay: .4s;
+  }
+  .healthy-foods:hover .layout-child:nth-child(1){
+    animation: image-animation .5s forwards;
+    animation-delay: 0s;
+  }
+  .healthy-foods:hover .layout-child:nth-child(2){
+    animation: image-animation .5s forwards;
+    animation-delay: .1s;
+  }
+  .healthy-foods:hover .layout-child:nth-child(3){
+    animation: image-animation .5s forwards;
+    animation-delay: .2s;
+  }
+  .healthy-foods:hover .layout-child:nth-child(4){
+    animation: image-animation .5s forwards;
+    animation-delay: .3s;
+  }
+  .healthy-foods:hover .layout-child:nth-child(5){
+    animation: image-animation .5s forwards;
+    animation-delay: .4s;
   }
   .tips:hover .layout{
     visibility: visible;
   }
   .healthy-foods:hover .layout{
     visibility: visible;
-  } */
+  }
   .hover-img{
     height: 150px;
     width: 250px;
   }
+  /* technology part */
   .layouts{
     display: grid;
     grid-template-columns:  repeat(4, minmax(min-content, 400px));; 
+  }
+  .technology-news:hover .tech-news{
+    visibility: visible;
+  }
+  .technology-news:hover .layouts-child{
+    visibility: visible;
+    opacity: 0;
+  }
+  .technology-news:hover .layouts{
+    visibility: visible;
+  }
+  .technology-news:hover .layouts-child:nth-child(1){
+    animation: image-animation .5s forwards;
+    animation-delay: 0s;
+  }
+  .technology-news:hover .layouts-child:nth-child(2){
+    animation: image-animation .5s forwards;
+    animation-delay: .1s;
+  }
+  .technology-news:hover .layouts-child:nth-child(3){
+    animation: image-animation .5s forwards;
+    animation-delay: .2s;
+  }
+  .technology-news:hover .layouts-child:nth-child(4){
+    animation: image-animation .5s forwards;
+    animation-delay: .3s;
+  }
+  .link:hover ~ .layouts-child{
+    background-color: #00adef;
   }
   .div{
     width: 30%;
@@ -87,24 +180,8 @@
   }
   .tech-news{
     width: 90%;
-    left: 6%;
     transition: visibility .3s ease-in;
     visibility: hidden;
-  }
-  .technology-news:hover .tech-news{
-    visibility: visible;
-  }
-  .tech-news .video-grid .all:nth-child(1){
-    transition-delay: 0s;
-  }
-  .tech-news .video-grid .all:nth-child(2){
-    transition-delay: 0.03s;
-  }
-  .tech-news .video-grid .all:nth-child(3){
-    transition-delay: 0.06s;
-  }
-  .tech-news .video-grid .all:nth-child(4){
-    transition-delay: 0.09s;
   }
   .computing{
     display: none;
@@ -376,9 +453,6 @@
       .layout,
       .tech-news{
         display: none;
-      }
-      .tech-news{
-        visibility: hidden;
       }
       .nav-items{
         height: unset;

@@ -17,7 +17,14 @@ function scrollToTop(){
   }
   let interval = window.setInterval(topFunction, 10);
 }
-
+/* for header height and position of layouts*/
+let layout = document.querySelectorAll('.hover-effect');
+if(document.documentElement.scrollTop > 20){
+  for(let i = 0; i<layout.length; i++){
+    layout[i].style.position = 'fixed';
+    layout[i].style.top = '50px';
+  }
+}
 // let hovers = document.getElementsByClassName('hover-class');
 // let timeouts = [];
 // for(let hover of hovers){
