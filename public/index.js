@@ -7,7 +7,7 @@ window.onscroll = function() {
       }
 };
 
-function scrollToTop(){
+function scrollToTop() {
   function topFunction() {
     if (document.documentElement.scrollTop <= 0){
       window.clearInterval(interval);
@@ -17,14 +17,23 @@ function scrollToTop(){
   }
   let interval = window.setInterval(topFunction, 10);
 }
+
 /* for header height and position of layouts*/
-let layout = document.querySelectorAll('.hover-effect');
-if(document.documentElement.scrollTop > 20){
-  for(let i = 0; i<layout.length; i++){
-    layout[i].style.position = 'fixed';
-    layout[i].style.top = '50px';
+let layout = document.getElementsByClassName('hover-effect'), scrollPos;
+document.addEventListener('scroll', function (e) {
+  for (let i = 0; i<layout.length; i++) {
+    scrollPos = document.documentElement.scrollTop;
+    if (scrollPos > 32) {
+      layout[i].style.top = '50px';
+    } else if (scrollPos == 0) {
+      layout[i].style.top = '80px';
+    } else {
+      let top = 80 - scrollPos
+      layout[i].style.top = top + 'px';
+    }
   }
-}
+});
+
 // let hovers = document.getElementsByClassName('hover-class');
 // let timeouts = [];
 // for(let hover of hovers){

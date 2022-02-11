@@ -6,46 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      body{
+      .container{
+        display: flex;
         background-color: #1a1b1f;
+        width: 100%;
       }
-      .number-div{
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      background-color: #1a1b1f;
-      z-index: 10;
-      border: 2px solid #fff;
+      .computing{
+        display: flex;
+        gap: 3;
       }
-      .number-div p{
-      height: 35px;
-      width: 35px;
-      background-color: #00adef;
-      padding: 10px;
-      border-radius: 50%;
-      text-align: center;
-      font-weight: bold;
-      font-size: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-    }
-    .ok{
-      display: flex;
-    }
-    img{
-      width: 100px;
-    }
+      span{
+        width: 30%;
+      }
+      .containers{
+        display: none;
+      }
     </style>
 </head>
 <body>
-  <div class="flex relative ok">
-    <div class="number-div">
-        <p>1</p>
+  <div class="flex relative bg-background container">
+    <span class="block hover:text-hover cursor-pointer text-sm hover:bg-darker py-3 pl-2 link">All</span>
+    <div>
+      <div class="computing layouts p-8 pb-10 gap-5">
+        <div class="relative">
+            <img src="images/robot1.jpg" alt="a robot" class="w-full cursor-pointer hover:opacity-70 hover-img">
+            <p class="hover:text-text-colors cursor-pointer text-sm my-3">Top 9 New Technology Future Inventions Gadgets Coming in 2017</p>
+            <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+            <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+        </div>
+        <div class="relative">
+            <img src="images/macbook.jpg" alt="macbook" class="w-full cursor-pointer hover:opacity-70 hover-img">
+            <p class="hover:text-text-colors cursor-pointer text-sm my-3">Cheap Tablet Hybrid - Great Tech Deals</p>
+            <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;May 6, 2015</p>
+            <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+        </div>
+        <div class="relative">
+            <img src="images/macbook.jpg" alt="macbook" class="w-full cursor-pointer hover:opacity-70 hover-img">
+            <p class="hover:text-text-colors cursor-pointer text-sm my-3">Apple MacBook Pro 15″ Touch Bar Unboxing & Review</p>
+            <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;April 6, 2015</p>
+            <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+        </div>
+        <div class="relative">
+            <img src="images/macbook.jpg" alt="macbook" class="w-full cursor-pointer hover:opacity-70 hover-img">
+            <p class="hover:text-text-colors cursor-pointer text-sm my-3">13″ MacBook Pro 2016 Unboxing! What's New</p>
+            <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2015</p>
+            <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+        </div>
     </div>
-    <div class="image-container">
-        <img src="images/gadget2.jpg" alt="computer gadget" class="popular-img hover:opacity-80 cursor-pointer transition-opacity">
+    </div>
+  </div>
+  <div class="flex relative bg-background container">
+    <span class="block hover:text-hover cursor-pointer text-sm hover:bg-darker py-3 pl-2 link text-white">link</span>
+    <div>
+      <div class="computing layouts p-8 pb-10 gap-5  containers">
+        <div class="relative">
+            <img src="images/robot1.jpg" alt="a robot" class="w-full cursor-pointer hover:opacity-70 hover-img">
+            <p class="hover:text-text-colors cursor-pointer text-sm my-3">Top 9 New Technology Future Inventions Gadgets Coming in 2017</p>
+            <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+            <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+        </div>
+        <div class="relative">
+            <img src="images/macbook.jpg" alt="macbook" class="w-full cursor-pointer hover:opacity-70 hover-img">
+            <p class="hover:text-text-colors cursor-pointer text-sm my-3">Cheap Tablet Hybrid - Great Tech Deals</p>
+            <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;May 6, 2015</p>
+            <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+        </div>
+        <div class="relative">
+            <img src="images/macbook.jpg" alt="macbook" class="w-full cursor-pointer hover:opacity-70 hover-img">
+            <p class="hover:text-text-colors cursor-pointer text-sm my-3">Apple MacBook Pro 15″ Touch Bar Unboxing & Review</p>
+            <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;April 6, 2015</p>
+            <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+        </div>
+        <div class="relative">
+            <img src="images/macbook.jpg" alt="macbook" class="w-full cursor-pointer hover:opacity-70 hover-img">
+            <p class="hover:text-text-colors cursor-pointer text-sm my-3">13″ MacBook Pro 2016 Unboxing! What's New</p>
+            <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2015</p>
+            <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+        </div>
+    </div>
+    </div>
+  <div class="flex relative bg-background container">
+    <span class="block hover:text-hover cursor-pointer text-sm hover:bg-darker py-3 pl-2 link text-white">link</span>
+    <div>
+      <div class="computing layouts p-8 pb-10 gap-5  containers">
+        <div class="relative">
+            <img src="images/robot1.jpg" alt="a robot" class="w-full cursor-pointer hover:opacity-70 hover-img">
+            <p class="hover:text-text-colors cursor-pointer text-sm my-3">Top 9 New Technology Future Inventions Gadgets Coming in 2017</p>
+            <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2017</p>
+            <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+        </div>
+        <div class="relative">
+            <img src="images/macbook.jpg" alt="macbook" class="w-full cursor-pointer hover:opacity-70 hover-img">
+            <p class="hover:text-text-colors cursor-pointer text-sm my-3">Cheap Tablet Hybrid - Great Tech Deals</p>
+            <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;May 6, 2015</p>
+            <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+        </div>
+        <div class="relative">
+            <img src="images/macbook.jpg" alt="macbook" class="w-full cursor-pointer hover:opacity-70 hover-img">
+            <p class="hover:text-text-colors cursor-pointer text-sm my-3">Apple MacBook Pro 15″ Touch Bar Unboxing & Review</p>
+            <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;April 6, 2015</p>
+            <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+        </div>
+        <div class="relative">
+            <img src="images/macbook.jpg" alt="macbook" class="w-full cursor-pointer hover:opacity-70 hover-img">
+            <p class="hover:text-text-colors cursor-pointer text-sm my-3">13″ MacBook Pro 2016 Unboxing! What's New</p>
+            <p class="text-light-white text-sm"><i class="fa fa-clock-o"></i>&nbsp;Feb 6, 2015</p>
+            <p><i class="fa fa-play border-4 rounded-full h-12 w-12 flex items-center justify-center text-lg text-white absolute top-14 left-24"></i></p>
+        </div>
+    </div>
     </div>
   </div>
 </body>

@@ -18,10 +18,10 @@
     grid-template-columns:  repeat(5, minmax(min-content, 300px));;
     visibility: hidden;
     width: 90%;
-    /* top: 50px; */
   }
   .hover-effect{
     left: 6%;
+    top: 80px;
   }
   .world:hover .layout-child{
     visibility: visible;
@@ -44,10 +44,9 @@
     border-radius: 50%;
     background-color: #1a1b1f;
     z-index: 10;
-    position: relative;
-    /* margin-left: 10px; */
-    left: 10px;
-    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .number-div p{
     height: 35px;
@@ -62,9 +61,6 @@
     align-items: center;
     justify-content: center;
     color: #fff;
-  }
-  .image-container{
-    
   }
   @keyframes image-animation {
     0%{ transform: translateY(10px); opacity: 0;;}
@@ -195,13 +191,19 @@
   .testing{
     width: 100%;
   }
+  .test-child{
+    width: 40%;
+  }
+  .second-child{
+    width: 60%;
+  }
   .position{
     right: 10%;
     top: 75%;
   }
   .play-btn{
-    top: 30%;
-    left: 45%;
+    top: 27%;
+    left: 43%;
   }
   .playBtn{
     top: 50%;
@@ -290,10 +292,10 @@
       align-items: center;
       justify-content: center;
   }
-  .test{
+  /* .test{
       display: grid;
       grid-template-columns: repeat(1, 120px 1fr);
-  }
+  } */
   .videos div{
       height: 90px;
   }
@@ -313,7 +315,7 @@
       font-size: 85%;
       padding: 0 5px;
       min-width: 24px;
-      height: 22px;
+      height: 25px;
       line-height: 22px;
       color: #fff;
       border-radius: 2px;
@@ -330,12 +332,16 @@
       top: 0;
       left: 0;
       opacity: 0;
-      transform: scale(0);
-      transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transform: scale(1);
+      transition: .5s;
   }
   .categories p:hover + .btn::before{
       opacity: 1;
-      transform: scale(1);
+      transform: scale(0);
+  }
+  /* cubic-bezier(0.165, 0.84, 0.44, 1) */
+  .categories p:hover + .btn{
+    background-color: #114e83;
   }
   @media (min-width:1024px) {
         body{
@@ -374,8 +380,8 @@
       }
       .height{
         height: 100px;
-        display: grid;
-        grid-template-columns: repeat(2, 200px);
+        /* display: grid;
+        grid-template-columns: repeat(2, 200px); */
       }
   }
   @media (max-width:1100px) {
@@ -485,7 +491,7 @@
       }
       .height{
         height: 100px;
-        display: flex;
+        /* display: flex; */
       }
   }
   @media (min-width:769px){
